@@ -1,4 +1,4 @@
-# partners
+# About Our Partners
 
 LitVM is built through collaboration with leading blockchain infrastructure providers. Our partners bring battle-tested technology and deep expertise to create a robust, scalable, and secure platform for the Litecoin ecosystem.
 
@@ -127,7 +127,7 @@ The **Litecoin Foundation** is the non-profit organization dedicated to advancin
 
 {% stepper %}
 {% step %}
-### Battle-Tested Technology
+#### Battle-Tested Technology
 
 Every partner brings production-proven infrastructure and best-in-class achievements:
 
@@ -138,7 +138,7 @@ Every partner brings production-proven infrastructure and best-in-class achievem
 {% endstep %}
 
 {% step %}
-### Aligned Values
+#### Aligned Values
 
 Partners share LitVM's commitment to:
 
@@ -149,7 +149,7 @@ Partners share LitVM's commitment to:
 {% endstep %}
 
 {% step %}
-### Complementary Expertise
+#### Complementary Expertise
 
 Each partner fills a critical role:
 

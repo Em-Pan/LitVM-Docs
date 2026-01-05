@@ -1,4 +1,4 @@
-# foundry
+# Foundry
 
 [Foundry](https://book.getfoundry.sh/) is a blazing-fast, portable, and modular toolkit for Ethereum application development. This guide shows you how to deploy smart contracts to LitVM using Foundry.
 
@@ -198,7 +198,7 @@ forge test -vvv
 
 {% stepper %}
 {% step %}
-### Direct deploy
+#### Direct deploy
 
 Use forge create with your RPC and private key:
 
@@ -210,7 +210,7 @@ forge create --rpc-url $LITVM_RPC_URL \
 {% endstep %}
 
 {% step %}
-### Deploy script (Recommended)
+#### Deploy script (Recommended)
 
 Create `script/Deploy.s.sol`:
 

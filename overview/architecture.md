@@ -1,8 +1,10 @@
-# architecture
+# Architecture
 
 LitVM is built on a modular, multi-layer architecture that combines the best of Arbitrum's battle-tested rollup technology with BitcoinOS's trustless bridging infrastructure. This design enables LitVM to deliver EVM compatibility, ZK security, and trustless Litecoin integration without requiring any changes to Litecoin's base protocol.
 
 ## Architecture Overview
+
+<figure><img src="../.gitbook/assets/image2.png" alt=""><figcaption></figcaption></figure>
 
 ### Core Components
 

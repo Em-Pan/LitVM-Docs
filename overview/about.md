@@ -1,4 +1,27 @@
-# about
+---
+cover: ../.gitbook/assets/image14.png
+coverY: 0
+coverHeight: 443
+layout:
+  width: default
+  cover:
+    visible: true
+    size: hero
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+---
+
+# About
 
 ## What is LitVM?
 
