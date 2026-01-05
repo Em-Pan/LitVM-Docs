@@ -100,19 +100,19 @@ LitVM builds on this foundation, bringing smart contract capabilities to one of 
 
 {% stepper %}
 {% step %}
-### Add LitVM to Your Wallet
+### [Add LitVM to Your Wallet](../get-started/add-to-wallet.md)
 
 Connect to the LitVM testnet.
 {% endstep %}
 
 {% step %}
-### Bridge LTC
+### [Bridge LTC](../get-started/testnet-bridge-ui.md)
 
 Get zkLTC on LitVM.
 {% endstep %}
 
 {% step %}
-### Deploy a Contract
+### [Deploy a Contract](/broken/pages/RHS7sr3JmmeILIx4FJ1c)
 
 Start building on LitVM.
 {% endstep %}
