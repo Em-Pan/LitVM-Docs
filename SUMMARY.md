@@ -25,7 +25,14 @@
 
 ## Integrations
 
-* [Partners & Integrations](integrations/partners.md)
+* [About Our Partners](integrations/partners.md)
+  * [Litecoin Foundation](https://litecoin.com/)
+  * [BitcoinOS](https://bitcoinos.build/)
+  * [Arbitrum](https://arbitrum.io/)
+  * [Caldera](https://caldera.xyz/)
+  * [Succinct](https://www.succinct.xyz/)
+  * [Espresso](https://www.espressosys.com/)
+  * [Lunar Digital Assets](https://www.lunardigitalassets.io/)
 
 ## Other Resources
 
