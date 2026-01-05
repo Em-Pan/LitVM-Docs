@@ -1,7 +1,7 @@
 ---
 cover: ../.gitbook/assets/image14.png
 coverY: 0
-coverHeight: 443
+coverHeight: 335
 layout:
   width: default
   cover:
