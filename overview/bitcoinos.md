@@ -1,4 +1,4 @@
-# bitcoinos
+# BitcoinOS Technology
 
 LitVM's trustless bridging capability is powered by **BitcoinOS (BOS)**—an operating system that extends UTXO blockchain capabilities beyond simple payments into programmable, decentralized applications. BitcoinOS enables LitVM to bridge native Litecoin assets without trusted intermediaries, custodians, or multisig schemes.
 
@@ -43,7 +43,11 @@ The verification process is optimistic—uncontested proofs are accepted—but i
 
 #### Bridge Flow: Litecoin → LitVM
 
+<figure><img src="../.gitbook/assets/image10.png" alt=""><figcaption></figcaption></figure>
+
 #### Bridge Flow: LitVM → Litecoin
+
+<figure><img src="../.gitbook/assets/image8.png" alt=""><figcaption></figcaption></figure>
 
 **Security Properties**
 

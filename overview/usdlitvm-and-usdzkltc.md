@@ -10,6 +10,8 @@ LitVM operates with a dual-token model designed to align incentives across the e
 
 ### How zkLTC Works
 
+<figure><img src="../.gitbook/assets/image7.png" alt=""><figcaption></figcaption></figure>
+
 ### Key Properties
 
 | **Property**    | **Description**                                           |
@@ -83,11 +85,15 @@ This model transforms core infrastructure usage into tangible, recurring revenue
 
 LitVM's tokenomics prioritize the community over insiders:
 
+<figure><img src="../.gitbook/assets/image3.png" alt=""><figcaption></figcaption></figure>
+
 **51% Community Allocation** — Over half of all tokens are reserved for the community, prioritizing current Litecoin holders and welcoming new ecosystem participants.
 
 ### Revenue Model
 
 LitVM's revenue model creates sustainable value through protocol fees:
+
+<figure><img src="../.gitbook/assets/image13.png" alt="" width="563"><figcaption></figcaption></figure>
 
 Rather than relying on inflationary rewards or inorganic social hype, LitVM transforms core infrastructure usage into tangible, recurring revenue that flows directly to community members.
 

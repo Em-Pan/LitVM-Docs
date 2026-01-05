@@ -89,6 +89,8 @@ The **Litecoin Foundation** is the non-profit organization dedicated to advancin
 
 ***
 
+<figure><img src="../.gitbook/assets/image5.png" alt="" width="41"><figcaption></figcaption></figure>
+
 ### Espresso Systems
 
 **Espresso** provides the shared sequencer infrastructure that ensures LitVM's transaction ordering is decentralized and censorship-resistant.
@@ -190,4 +192,4 @@ LitVM is actively seeking partners across:
 
 ***
 
-Interested in partnering with LitVM? Reach out via [Twitter](https://twitter.com/LitecoinVM) or email [\[email protected\]](file:///cdn-cgi/l/email-protection)
+Interested in partnering with LitVM? Reach out via [Twitter](https://twitter.com/LitecoinVM) or email [hello@litvm.com](mailto:hello@litvm.com)

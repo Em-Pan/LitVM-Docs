@@ -1,4 +1,4 @@
-# connect
+# Connect
 
 Stay updated with the latest LitVM news, participate in community discussions, and connect with other developers and Litecoin enthusiasts.
 
@@ -89,7 +89,7 @@ Monthly subscribers are entered to win **1 LTC**!
 
 For press inquiries and media requests:
 
-**Email:** [\[email protected\]](file:///cdn-cgi/l/email-protection)
+**Email:** [hello@litvm.com](mailto:hello@litvm.com)
 
 ### Press Kit
 
