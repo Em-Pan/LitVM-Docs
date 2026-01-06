@@ -14,5 +14,5 @@ This page is under construction and will be available shortly.
 
 Join our community to be notified when this feature launches:
 
-* **Telegram:** https://t.me/litecoinvm
-* **Twitter:** https://twitter.com/LitecoinVM
+* **Telegram:** [https://t.me/litecoinvm](https://t.me/litecoinvm)
+* **Twitter:** [https://twitter.com/LitecoinVM](https://twitter.com/LitecoinVM)

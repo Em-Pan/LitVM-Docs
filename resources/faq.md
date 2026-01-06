@@ -1,4 +1,4 @@
-# faq
+# FAQ
 
 Find answers to common questions about LitVM, its technology, and how to get started.
 
@@ -26,9 +26,9 @@ Yes. LitVM is officially endorsed by the Litecoin Foundation, making it the firs
 
 <summary>When will LitVM launch?</summary>
 
-* Testnet: Q1 2026
-* Token Generation Event (TGE): Following testnet
-* Mainnet: After TGE and security audits
+* **Testnet:** Q1 2026
+* **Token Generation Event (TGE):** Following testnet
+* **Mainnet:** After TGE and security audits
 
 </details>
 
@@ -40,7 +40,14 @@ Yes. LitVM is officially endorsed by the Litecoin Foundation, making it the firs
 
 <summary>How does LitVM work?</summary>
 
-Executes smart contracts (Arbitrum Nitro)LitVM executes smart contracts using Arbitrum Nitro (EVM-compatible).Generates zk validity proofs (Succinct zkVM)Uses Succinct zkVM to generate validity proofs.Trustless LTC bridging (BitcoinOS Grail bridge)Bridges LTC trustlessly via BitcoinOS Grail bridge.EVM asset bridging (Arbitrum Bridge)Bridges ETH and ERC-20s via the Arbitrum Bridge.Decentralized sequencing (Espresso)Decentralizes sequencing through Espresso shared sequencer.Settlement migrationInitially settles on Ethereum, then migrates to Litecoin mainchain.
+LitVM is an Arbitrum Orbit chain (rollup) that:
+
+1. Executes smart contracts using Arbitrum Nitro (EVM-compatible)
+2. Uses Succinct zkVM to generate validity proofs
+3. Bridges LTC trustlessly via BitcoinOS Grail bridge
+4. Bridges ETH and ERC-20s via the Arbitrum Bridge
+5. Decentralizes sequencing through Espresso shared sequencer
+6. Initially settles on Ethereum, then migrates to Litecoin mainchain
 
 </details>
 
@@ -50,8 +57,8 @@ Executes smart contracts (Arbitrum Nitro)LitVM executes smart contracts using Ar
 
 LitVM is a hybrid rollup that combines both:
 
-* Optimistic execution for fast transaction processing
-* ZK validity proofs for cryptographic security guarantees
+* **Optimistic execution** for fast transaction processing
+* **ZK validity proofs** for cryptographic security guarantees
 
 This gives the speed of optimistic rollups with the security of zkRollups.
 
@@ -74,7 +81,7 @@ Unlike traditional bridges that rely on multisig custodians, LitVM uses BitcoinO
 
 <summary>How do I bridge assets from Ethereum?</summary>
 
-LitVM supports the standard Arbitrum Bridge for EVM-native assets like ETH, USDC, and other ERC-20 tokens. This provides a familiar bridging experience for Ethereum users and access to deep EVM liquidity.
+LitVM supports the standard **Arbitrum Bridge** for EVM-native assets like ETH, USDC, and other ERC-20 tokens. This provides a familiar bridging experience for Ethereum users and access to deep EVM liquidity.
 
 </details>
 
@@ -149,7 +156,11 @@ $LITVM will be available after the Token Generation Event (TGE). Ways to partici
 
 <summary>How do I add LitVM to my wallet?</summary>
 
-One-click (when available)Use the one-click add on the LitVM Network Hub (Coming Soon).Manual RPCAdd manually using RPC details.ChainListUse ChainList.org.
+See our Add to Your Wallet guide. You can:
+
+1. Use the one-click add on the LitVM Network Hub (Coming Soon)
+2. Add manually using RPC details
+3. Use ChainList.org
 
 </details>
 
@@ -157,7 +168,10 @@ One-click (when available)Use the one-click add on the LitVM Network Hub (Coming
 
 <summary>How do I get testnet zkLTC?</summary>
 
-Add testnetAdd LitVM Testnet to your wallet.Visit faucetVisit the Testnet Faucet.Connect walletConnect your wallet and request zkLTC.Receive tokensTokens arrive in \~30 seconds.
+1. Add LitVM Testnet to your wallet
+2. Visit the Testnet Faucet
+3. Connect your wallet and request zkLTC
+4. Tokens arrive in \~30 seconds
 
 </details>
 
@@ -214,12 +228,12 @@ Fees are paid in zkLTC.
 
 LitVM inherits security from multiple layers:
 
-1. Litecoin: 14+ years of uninterrupted PoW security
-2. Ethereum: World's most decentralized smart contract platform (Phase 1 settlement)
-3. ZK Proofs: Mathematical guarantees of execution correctness
-4. Espresso: Decentralized sequencing prevents censorship
-5. BitcoinOS Grail: Non-custodial bridging with 1/n security
-6. Arbitrum Bridge: Battle-tested rollup bridge for EVM assets
+1. **Litecoin:** 14+ years of uninterrupted PoW security
+2. **Ethereum:** World's most decentralized smart contract platform (Phase 1 settlement)
+3. **ZK Proofs:** Mathematical guarantees of execution correctness
+4. **Espresso:** Decentralized sequencing prevents censorship
+5. **BitcoinOS Grail:** Non-custodial bridging with 1/n security
+6. **Arbitrum Bridge:** Battle-tested rollup bridge for EVM assets
 
 </details>
 
@@ -279,12 +293,12 @@ Yes, fully EVM-equivalent. Deploy the same contracts you'd deploy on Ethereum, A
 **Testnet:**
 
 ```
-RPCURL:⚠️ **⚠️ **TBA** — This value will be published closer to launch** — This value will be published closer to launch
-ChainID:⚠️ **⚠️ **TBA** — This value will be published closer to launch** — This value will be published closer to launch
-Explorer:⚠️ **⚠️ **TBA** — This value will be published closer to launch** — This value will be published closer to launch
+RPC URL: [TBA]
+Chain ID: [TBA]
+Explorer: [TBA]
 ```
 
-**Mainnet:** Coming after TGE
+**Mainnet:** Coming after TGE
 
 </details>
 
@@ -302,7 +316,10 @@ Explorer:⚠️ **⚠️ **TBA** — This value will be published closer to laun
 
 <summary>How do I get developer support?</summary>
 
-TelegramFastest response for quick questions.GitHubFile issues for bugs.DocumentationCheck these docs first!TwitterTag @LitecoinVM for visibility.
+1. **Telegram:** Fastest response for quick questions
+2. **GitHub:** File issues for bugs
+3. **Documentation:** Check these docs first!
+4. **Twitter:** Tag [@LitecoinVM](https://x.com/litecoinvm) for visibility
 
 </details>
 
@@ -314,13 +331,13 @@ TelegramFastest response for quick questions.GitHubFile issues for bugs.Document
 
 <summary>What can I do on LitVM?</summary>
 
-* Yield: Earn yield on LTC with on-chain DeFi and institutional-grade vaults
-* DeFi: Trade, lend, borrow, provide liquidity
-* RWAs: Tokenized real-world assets
-* AI: AI agents and AI-integrated applications
-* Payments: Fast, cheap and programmable Litecoin transactions
-* NFTs: Mint, trade, and use Litecoin-native NFTs
-* Gaming: On-chain games and rewards
+* **Yield:** Earn yield on LTC with on-chain DeFi and institutional-grade vaults
+* **DeFi:** Trade, lend, borrow, provide liquidity
+* **RWAs:** Tokenized real-world assets
+* **AI:** AI agents and AI-integrated applications
+* **Payments:** Fast, cheap and programmable Litecoin transactions
+* **NFTs:** Mint, trade, and use Litecoin-native NFTs
+* **Gaming:** On-chain games and rewards
 
 </details>
 
@@ -431,7 +448,7 @@ For ETH/ERC-20 bridging (Arbitrum Bridge):
 2. Wait for the standard confirmation period
 3. Check Arbitrum Bridge UI for status
 
-Contact support in Discord if issues persist >1 hour.
+Contact support in Telegram if issues persist >1 hour.
 
 </details>
 
@@ -441,6 +458,6 @@ Contact support in Discord if issues persist >1 hour.
 
 * Telegram: [t.me/litecoinvm](http://t.me/litecoinvm)
 * Twitter: [@LitecoinVM](https://twitter.com/LitecoinVM)
-* Email: [\[email protected\]](file:///cdn-cgi/l/email-protection)
+* Email: [hello@litvm.com](mailto:hello@litvm.com)
 
 Can't find your question? Submit feedback via our Feedback Form and we'll add it.

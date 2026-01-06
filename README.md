@@ -26,4 +26,4 @@ LitVM brings smart contract capabilities to Litecoin through a zero-knowledge ro
 
 * **Telegram:** [t.me/litecoinvm](https://t.me/litecoinvm)
 * **Twitter:** [@LitecoinVM](https://twitter.com/LitecoinVM)
-* **Email:** support@litvm.com
+* **Email:** [hello@litvm.com](mailto:hello@litvm.com)

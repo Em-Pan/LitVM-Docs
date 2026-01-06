@@ -163,13 +163,13 @@ BOS enables tokens inscribed with ZK proofs that embed smart contract logic dire
 
 ### BitcoinOS Documentation
 
-* **Technical Docs** : https://docs.bitcoinos.build/
-* **Grail Bridge** : https://docs.bitcoinos.build/technical-documentation/grail
-* **BitSNARK** : https://docs.bitcoinos.build/technical-documentation/quickstart/bitsnark-vm-verifying-zksnarks-on-bitcoin
+* **Technical Docs**: [https://docs.bitcoinos.build/](https://docs.bitcoinos.build/)
+* **Grail Bridge**: [https://docs.bitcoinos.build/technical-documentation/grail](https://docs.bitcoinos.build/technical-documentation/grail)
+* **BitSNARK**: [https://docs.bitcoinos.build/technical-documentation/quickstart/bitsnark-vm-verifying-zksnarks-on-bitcoin](https://docs.bitcoinos.build/technical-documentation/quickstart/bitsnark-vm-verifying-zksnarks-on-bitcoin)
 
 ### Testnet Bridge
 
-* **Grail Testnet** : https://test-grail.bitcoinos.build/
+* **Grail Testnet**: [https://test-grail.bitcoinos.build/](https://test-grail.bitcoinos.build/)
 * **Supported Testnets** : Ethereum Holešky, Base Sepolia, Mode Sepolia, and more
 
 ## Summary

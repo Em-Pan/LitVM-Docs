@@ -89,8 +89,6 @@ The **Litecoin Foundation** is the non-profit organization dedicated to advancin
 
 ***
 
-<figure><img src="../.gitbook/assets/image5.png" alt="" width="41"><figcaption></figcaption></figure>
-
 ### Espresso Systems
 
 **Espresso** provides the shared sequencer infrastructure that ensures LitVM's transaction ordering is decentralized and censorship-resistant.
@@ -110,7 +108,7 @@ The **Litecoin Foundation** is the non-profit organization dedicated to advancin
 
 ## Incubation Partners
 
-### Lunar Digital Assets \[g]
+### Lunar Digital Assets
 
 **Lunar Digital Assets** is the venture studio incubating LitVM:
 
@@ -174,7 +172,7 @@ LitVM is actively seeking partners across:
 * **Wallets** : Consumer and institutional
 * **Enterprise** : Payment processors, custodians
 
-**Contact:** [\[email protected\]](file:///cdn-cgi/l/email-protection)
+**Contact:** [hello@litvm.com](mailto:hello@litvm.com)
 
 ***
 
