@@ -460,4 +460,4 @@ Contact support in Telegram if issues persist >1 hour.
 * Twitter: [@LitecoinVM](https://twitter.com/LitecoinVM)
 * Email: [hello@litvm.com](mailto:hello@litvm.com)
 
-Can't find your question? Submit feedback via our Feedback Form and we'll add it.
+Can't find your question? Submit feedback via our [Feedback Form](https://forms.gle/Geo4ojvZ4egLE9od6) and we'll add it.
