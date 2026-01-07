@@ -306,9 +306,7 @@ Explorer: [TBA]
 
 <summary>Are there developer grants?</summary>
 
-```
 51% of the total $LITVM token supply is reserved for community and ecosystem via the Litecoin DAO. This will include grants and bootstrapping capital for ecosystem applications.
-```
 
 </details>
 
