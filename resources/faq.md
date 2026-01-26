@@ -95,6 +95,14 @@ No. LitVM works with Litecoin's existing protocol. No soft forks, hard forks, or
 
 <details>
 
+<summary>Are there any EVM differences I should know about?</summary>
+
+Yes, a few minor ones. Most notably, `block.number` returns the approximate Ethereum L1 block number, not the LitVM block number. See our [EVM Differences guide](../deploy-on-testnet/evm-differences.md) for details.
+
+</details>
+
+<details>
+
 <summary>What's the difference between zkLTC and wrapped LTC?</summary>
 
 | zkLTC                        | Wrapped LTC (Traditional)      |
@@ -105,6 +113,8 @@ No. LitVM works with Litecoin's existing protocol. No soft forks, hard forks, or
 | On-chain verification        | Off-chain attestation          |
 
 </details>
+
+
 
 ***
 

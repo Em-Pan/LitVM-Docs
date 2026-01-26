@@ -168,8 +168,8 @@ LitVM's mainnet will be deployed in three phases:
 | **Network Name**    | LitVM Testnet                                              |
 | **Chain ID**        | ⚠️ **TBA** — This value will be published closer to launch |
 | **Native Currency** | zkLTC                                                      |
-| **Block Time**      | ?                                                          |
-| **Gas Limit**       | ?                                                          |
+| **Block Time**      | Variable (on-demand)                                       |
+| **Gas Limit**       | 32,000,000 (effective)                                     |
 | **EVM Version**     | Shanghai                                                   |
 
 Note: Final parameters will be confirmed at testnet launch.

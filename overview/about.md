@@ -66,13 +66,13 @@ LitVM is built around five core objectives:
 
 ## Key Features
 
-| Feature            | Description                                                       |
-| ------------------ | ----------------------------------------------------------------- |
-| EVM Compatibility  | Full compatibility with Ethereum tooling and smart contracts      |
-| Trustless Bridging | Move LTC to and from LitVM without custodians via BitcoinOS Grail |
-| ZK Security        | Zero-knowledge proofs provide cryptographic security guarantees   |
-| Low Fees           | Sub-cent transaction fees for retail and enterprise use cases     |
-| High Throughput    | Thousands of transactions per second                              |
+| Feature            | Description                                                                                                                                                                                                        |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| EVM Compatibility  | <p>Full compatibility with Ethereum tooling and smart contracts<br><sub>See</sub> <a href="../deploy-on-testnet/evm-differences.md"><sub>EVM Differences</sub></a> <sub>for minor behavioral differences</sub></p> |
+| Trustless Bridging | Move LTC to and from LitVM without custodians via BitcoinOS Grail                                                                                                                                                  |
+| ZK Security        | Zero-knowledge proofs provide cryptographic security guarantees                                                                                                                                                    |
+| Low Fees           | Sub-cent transaction fees for retail and enterprise use cases                                                                                                                                                      |
+| High Throughput    | Thousands of transactions per second                                                                                                                                                                               |
 
 ## The Litecoin Advantage
 

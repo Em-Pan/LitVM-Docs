@@ -1,4 +1,4 @@
-# SUMMARY
+# Table of contents
 
 * [Welcome](README.md)
 
@@ -18,6 +18,7 @@
 
 ## Deploy on Testnet
 
+* [EVM Differences](deploy-on-testnet/evm-differences.md)
 * [Foundry](deploy/foundry.md)
 * [Hardhat](deploy/hardhat.md)
 * [Remix](deploy/remix.md)
