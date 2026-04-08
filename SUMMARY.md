@@ -26,7 +26,7 @@
 
 ## Integrations
 
-* [About Our Partners](integrations/partners.md)
+* [Core Infra Partners](integrations/partners.md)
   * [Litecoin Foundation](https://litecoin.com/)
   * [BitcoinOS](https://bitcoinos.build/)
   * [Arbitrum](https://arbitrum.io/)
@@ -34,6 +34,7 @@
   * [Succinct](https://www.succinct.xyz/)
   * [Espresso](https://www.espressosys.com/)
   * [Lunar Digital Assets](https://www.lunardigitalassets.io/)
+* [Goldsky (Indexing)](integrations/goldsky.md)
 
 ## Other Resources
 

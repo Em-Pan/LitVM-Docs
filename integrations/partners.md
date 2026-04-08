@@ -1,4 +1,4 @@
-# About Our Partners
+# Core Infra Partners
 
 LitVM is built through collaboration with leading blockchain infrastructure providers. Our partners bring battle-tested technology and deep expertise to create a robust, scalable, and secure platform for the Litecoin ecosystem.
 
