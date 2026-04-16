@@ -112,7 +112,7 @@ Get zkLTC on LitVM.
 {% endstep %}
 
 {% step %}
-### [Deploy a Contract](/broken/pages/RHS7sr3JmmeILIx4FJ1c)
+### [Deploy a Contract](../deploy/foundry.md)
 
 Start building on LitVM.
 {% endstep %}
