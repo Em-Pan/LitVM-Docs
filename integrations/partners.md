@@ -106,6 +106,23 @@ The **Litecoin Foundation** is the non-profit organization dedicated to advancin
 
 ***
 
+## Data & Indexing Partners
+
+### Goldsky
+
+**Goldsky** is a high-performance blockchain data infrastructure provider offering real-time indexing and subgraph services. LitVM integrates with Goldsky to give developers seamless access to on-chain data.
+
+**Role in LitVM:**
+
+* Real-time subgraph indexing for LitVM contracts
+* Mirror pipelines for streaming on-chain data
+* Developer-friendly APIs for dApp data queries
+* Reliable data infrastructure for the LitVM ecosystem
+
+**Learn More:** [goldsky.com](https://goldsky.com/)
+
+***
+
 ## Incubation Partners
 
 ### Lunar Digital Assets
@@ -186,6 +203,7 @@ LitVM is actively seeking partners across:
 | [Caldera](https://caldera.xyz/)                        | Infrastructure | EVM Infra Management    |
 | [Succinct](https://succinct.xyz/)                      | Infrastructure | ZK Proving              |
 | [Espresso](https://espressosys.com/)                   | Infrastructure | Shared Sequencing       |
+| [Goldsky](https://goldsky.com/)                        | Data & Indexing | Subgraph & Data Infra  |
 | [Lunar Digital Assets](https://lunardigitalassets.io/) | Incubator      | Development Studio      |
 
 ***

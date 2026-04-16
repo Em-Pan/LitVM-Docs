@@ -1,6 +1,6 @@
 # $LITVM & $zkLTC
 
-LitVM operates with a dual-token model designed to align incentives across the ecosystem while maintaining the principles of sound money. Each token serves a distinct purpose in powering the network.
+LitVM operates with a dual-token model designed to align incentives across the ecosystem while maintaining the principles of hard money. Each token serves a distinct purpose in powering the network.
 
 ## zkLTC — The Gas Token
 
@@ -117,11 +117,11 @@ The dual-token model serves distinct purposes:
 | **Backing**          | 1:1 with LTC                   | Protocol value         |
 | **Supply**           | Elastic (based on bridged LTC) | Fixed                  |
 | **Use Case**         | Transactions & DeFi            | Voting & Revenue       |
-| **Economic Role**    | Sound money base layer         | Ecosystem coordination |
+| **Economic Role**    | Hard money base layer          | Ecosystem coordination |
 
 ### Benefits of Separation
 
-* **Sound Money Preservation**: Gas fees paid in LTC-backed asset maintains Litecoin's monetary properties
+* **Hard Money Preservation**: Gas fees paid in LTC-backed asset maintains Litecoin's monetary properties
 * **Clear Incentives**: Governance token aligns long-term stakeholders
 * **Sustainable Economics**: Revenue sharing creates value beyond speculation
 * **Flexible Tokenomics**: Each token can be optimized for its specific role
@@ -134,14 +134,14 @@ The dual-token model serves distinct purposes:
 
 | **Milestone**                | **Target**        |
 | ---------------------------- | ----------------- |
-| Testnet Launch               | Q1 2026           |
+| Testnet Launch               | ✅ Live            |
 | Token Generation Event (TGE) | Following Testnet |
 | Mainnet Activation           | Post-TGE          |
 
 ### How to Participate
 
 * **Early Access**: Follow [@LitecoinVM](https://twitter.com/LitecoinVM) for testnet access updates
-* **Community Campaigns**: Participate in initiatives such as [Xeet](https://www.xeet.ai/signals/litvm) and earn rewards
+* **Community Campaigns**: Participate in initiatives and earn rewards
 * **Litecoin Holders**: Existing LTC holders will be prioritized
 
 ***
@@ -153,4 +153,4 @@ The dual-token model serves distinct purposes:
 | **zkLTC**  | Gas & DeFi base asset | 1:1 LTC backing, trustless bridge                    |
 | **$LITVM** | Governance & utility  | Majority community-owned/controlled, revenue sharing |
 
-Together, these tokens create a sustainable ecosystem that honors Litecoin's sound money principles while enabling programmable functionality and community governance.
+Together, these tokens create a sustainable ecosystem that honors Litecoin's hard money principles while enabling programmable functionality and community governance.

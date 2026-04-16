@@ -11,8 +11,8 @@
 
 ## Get Started on Testnet
 
+* [Testnet Hub](https://testnet.litvm.com)
 * [Add to Your Wallet](get-started/add-to-wallet.md)
-* [Testnet Bridge UI](get-started/testnet-bridge-ui.md)
 * [Testnet Block Explorer](get-started/testnet-block-explorer.md)
 * [Testnet Faucet](get-started/faucet.md)
 
@@ -22,7 +22,6 @@
 * [Foundry](deploy/foundry.md)
 * [Hardhat](deploy/hardhat.md)
 * [Remix](deploy/remix.md)
-* [Video Tutorial](deploy/video-tutorial.md)
 
 ## Integrations
 

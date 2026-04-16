@@ -24,7 +24,7 @@ The easiest way to add LitVM is through our network configuration page:
 {% step %}
 ### One-Click Add
 
-* Visit the LitVM Network Hub (coming soon)
+* Visit the [LitVM Testnet Hub](https://testnet.litvm.com)
 * Click **"Add to Wallet"**
 * Approve the network addition in your wallet
 * Done! You're connected to LitVM
@@ -185,18 +185,10 @@ After connecting your wallet, you'll need testnet zkLTC for gas:
 {% step %}
 ### Testnet Faucet
 
-* Visit the LitVM Testnet Faucet (coming soon)
-* Connect your wallet
+* Visit the [LitVM Testnet Hub](https://testnet.litvm.com)
+* Click **"Get zkLTC"**
 * Request testnet zkLTC
-* Tokens will arrive in \~30 seconds
-{% endstep %}
-
-{% step %}
-### Bridge from Testnet LTC
-
-* Acquire testnet LTC from a Litecoin testnet faucet
-* Use the LitVM Bridge to convert to zkLTC
-* zkLTC will appear in your wallet
+* Tokens will arrive instantly
 {% endstep %}
 {% endstepper %}
 
@@ -267,6 +259,5 @@ For the latest network parameters and support:
 
 Now that your wallet is connected:
 
-1. **Get Testnet zkLTC** — Fund your wallet for testing
-2. **Bridge Assets** — Move LTC to LitVM
-3. **Deploy a Contract** — Start building on LitVM
+1. **Get Testnet zkLTC** — Fund your wallet at the [LitVM Testnet Hub](https://testnet.litvm.com) → click "Get zkLTC"
+2. **Deploy a Contract** — Start building on LitVM

@@ -97,11 +97,11 @@ libs = ["lib"]
 solc = "0.8.19"
 
 [rpc_endpoints]
-litvm_testnet = "RPC_URL"
-litvm_mainnet = "RPC_URL"
+litvm_testnet = "https://liteforge.rpc.caldera.xyz/http"
+litvm_mainnet = "RPC_URL_MAINNET_TBD"
 
 [explorer]
-litvm_testnet = { key = "${LITVM_EXPLORER_API_KEY}", url = "EXPLORER_URL/api"}
+litvm_testnet = { key = "${LITVM_EXPLORER_API_KEY}", url = "https://liteforge.explorer.caldera.xyz/api"}
 ```
 
 ***
@@ -113,7 +113,7 @@ Create a `.env` file (add to `.gitignore`!):
 ```bash
 # .env
 PRIVATE_KEY=your_private_key_here
-LITVM_RPC_URL=RPC_URL
+LITVM_RPC_URL=https://liteforge.rpc.caldera.xyz/http
 ```
 
 Load environment variables:
@@ -249,13 +249,13 @@ Verify on LitVM Explorer:
 
 ```bash
 forge verify-contract \
-  --chain-id [LITVM_CHAIN_ID] \
+  --chain-id 4441 \
   --compiler-version v0.8.19 \
   --watch \
   [DEPLOYED_CONTRACT_ADDRESS] \
   src/Counter.sol:Counter \
   --explorer-api-key $LITVM_EXPLORER_API_KEY \
-  --verifier-url EXPLORER_URL
+  --verifier-url https://liteforge.explorer.caldera.xyz
 ```
 
 ***
@@ -366,4 +366,4 @@ cast nonce [YOUR_ADDRESS] --rpc-url $LITVM_RPC_URL
 
 * [Foundry Book](https://book.getfoundry.sh/)
 * [Foundry GitHub](https://github.com/foundry-rs/foundry)
-* LitVM Block Explorer (coming soon)
+* [LitVM Block Explorer](https://liteforge.explorer.caldera.xyz)

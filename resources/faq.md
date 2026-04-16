@@ -26,7 +26,7 @@ Yes. LitVM is officially endorsed by the Litecoin Foundation, making it the firs
 
 <summary>When will LitVM launch?</summary>
 
-* **Testnet:** Q1 2026
+* **Testnet:** ✅ Live — visit the [LitVM Testnet Hub](https://testnet.litvm.com) to get started
 * **Token Generation Event (TGE):** Following testnet
 * **Mainnet:** After TGE and security audits
 
@@ -154,7 +154,7 @@ $LITVM will be available after the Token Generation Event (TGE). Ways to partici
 
 * Follow [@LitecoinVM](https://twitter.com/LitecoinVM) for early access programs
 * Participate in testnet activities
-* Join community campaigns (like LitVM’s ongoing [Xeet campaign](https://www.xeet.ai/signals/litvm))
+* Join community campaigns
 
 </details>
 
@@ -168,7 +168,7 @@ $LITVM will be available after the Token Generation Event (TGE). Ways to partici
 
 See our Add to Your Wallet guide. You can:
 
-1. Use the one-click add on the LitVM Network Hub (Coming Soon)
+1. Use the one-click add on the [LitVM Testnet Hub](https://testnet.litvm.com)
 2. Add manually using RPC details
 3. Use ChainList.org
 
@@ -303,9 +303,9 @@ Yes, fully EVM-equivalent. Deploy the same contracts you'd deploy on Ethereum, A
 **Testnet:**
 
 ```
-RPC URL: [TBA]
-Chain ID: [TBA]
-Explorer: [TBA]
+RPC URL: https://liteforge.rpc.caldera.xyz/http
+Chain ID: 4441
+Explorer: https://liteforge.explorer.caldera.xyz
 ```
 
 **Mainnet:** Coming after TGE
@@ -410,7 +410,7 @@ $LITVM holders and/or stakers receive a share of sequencer fees—the fees gener
 
 <summary>Why does LitVM have two tokens?</summary>
 
-zkLTC serves as the gas token (1:1 backed by LTC), while $LITVM is the governance and utility token. This separation preserves Litecoin's sound money properties for transactions while enabling community coordination and revenue sharing through a dedicated governance token.
+zkLTC serves as the gas token (1:1 backed by LTC), while $LITVM is the governance and utility token. This separation preserves Litecoin's hard money properties for transactions while enabling community coordination and revenue sharing through a dedicated governance token.
 
 </details>
 

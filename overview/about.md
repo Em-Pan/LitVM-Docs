@@ -29,16 +29,16 @@ LitVM (Litecoin Virtual Machine) is Litecoin's first trustless EVM rollup, desig
 
 Built using Arbitrum Nitro and powered by BitcoinOS technology, LitVM delivers a decentralized, EVM-compatible smart contract layer on Litecoin—enabling Web3 functionality such as DeFi, real-world asset (RWA) tokenization, yield opportunities, and AI-driven applications while inheriting Litecoin's battle-tested proof-of-work security.
 
-## Sound Money Web3
+## Hard Money Web3
 
-LitVM follows the mantra of "Sound Money Web3"—bringing the principles of sound money (scarcity, security, and decentralization) to programmable blockchain applications. By bridging trustless native Litecoin and Litecoin-native assets via BitcoinOS's ZK technology, LitVM empowers these decentralized assets with lightning-fast EVM smart contract capabilities.
+LitVM follows the mantra of "Hard Money Web3"—bringing the principles of hard money (scarcity, security, and decentralization) to programmable blockchain applications. By bridging trustless native Litecoin and Litecoin-native assets via BitcoinOS's ZK technology, LitVM empowers these decentralized assets with lightning-fast EVM smart contract capabilities.
 
 ## Our Mission
 
 LitVM is built around five core objectives:
 
 * Create more demand for LTC — Drive adoption and utility for Litecoin as a base layer asset
-* Unlock Sound Money Web3 — Solve the trustless sound money issue in Web3 for retail, funds, institutions, treasuries and governments
+* Unlock Hard Money Web3 — Solve the trustless hard money issue in Web3 for retail, funds, institutions, treasuries and governments
 * Foster a utility-driven and cross-chain future for Litecoin users — Connect Litecoin to the broader Web3 ecosystem
 * Enable yield-generation opportunities for LTC holders — Provide sustainable earning mechanisms for the Litecoin community
 * Create a vibrant Litecoin-powered ecosystem — Primary focus on yield, RWAs, and AI applications
@@ -106,7 +106,7 @@ Connect to the LitVM testnet.
 {% endstep %}
 
 {% step %}
-### [Bridge LTC](../get-started/testnet-bridge-ui.md)
+### [Get zkLTC](https://testnet.litvm.com)
 
 Get zkLTC on LitVM.
 {% endstep %}

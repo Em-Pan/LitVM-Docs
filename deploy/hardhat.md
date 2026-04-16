@@ -61,14 +61,14 @@ module.exports = {
   },
   networks: {
     litvm_testnet: {
-      url: "RPC_URL",
-      chainId: 0, // Replace with actual Chain ID when available
+      url: "https://liteforge.rpc.caldera.xyz/http",
+      chainId: 4441,
       accounts: PRIVATE_KEY ? [PRIVATE_KEY] : [],
       gasPrice: "auto",
     },
     litvm_mainnet: {
-      url: "RPC_URL",
-      chainId: 0, // Replace with actual Chain ID when available
+      url: "RPC_URL_MAINNET_TBD",
+      chainId: 0, // Mainnet Chain ID TBD
       accounts: PRIVATE_KEY ? [PRIVATE_KEY] : [],
       gasPrice: "auto",
     },
@@ -80,10 +80,10 @@ module.exports = {
     customChains: [
       {
         network: "litvm_testnet",
-        chainId: 0, // Replace with actual Chain ID
+        chainId: 4441,
         urls: {
-          apiURL: "EXPLORER_URL/api",
-          browserURL: "EXPLORER_URL",
+          apiURL: "https://liteforge.explorer.caldera.xyz/api",
+          browserURL: "https://liteforge.explorer.caldera.xyz",
         },
       },
     ],
@@ -442,7 +442,7 @@ const config: HardhatUserConfig = {
   solidity: "0.8.19",
   networks: {
     litvm_testnet: {
-      url: "RPC_URL",
+      url: "https://liteforge.rpc.caldera.xyz/http",
       accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : [],
     },
   },

@@ -204,7 +204,7 @@ Each write function triggers a MetaMask transaction popup.
 ## View on Block Explorer
 
 1. After deploying, copy the contract address from **Deployed Contracts**
-2. Visit LitVM Explorer (Coming Soon)
+2. Visit [LitVM Explorer](https://liteforge.explorer.caldera.xyz)
 3. Paste your contract address in the search bar
 4. View transactions, events, and contract code
 
