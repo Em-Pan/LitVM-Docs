@@ -103,12 +103,12 @@ Configure MetaMask
 
 Ensure LitVM Testnet is added to your wallet:
 
-| **Setting**     | **Value**                                                                                                     |
-| --------------- | ------------------------------------------------------------------------------------------------------------- |
-| Network Name    | LitVM Testnet                                                                                                 |
-| RPC URL         | ⚠️ **⚠️ TBA — This value will be published closer to launch** — This value will be published closer to launch |
-| Chain ID        | ⚠️ **⚠️ TBA — This value will be published closer to launch** — This value will be published closer to launch |
-| Currency Symbol | zkLTC                                                                                                         |
+| **Setting**     | **Value**                                        |
+| --------------- | ------------------------------------------------ |
+| Network Name    | LitVM LiteForge                                  |
+| RPC URL         | https://liteforge.rpc.caldera.xyz/http           |
+| Chain ID        | 4441                                             |
+| Currency Symbol | zkLTC                                            |
 {% endstep %}
 
 {% step %}

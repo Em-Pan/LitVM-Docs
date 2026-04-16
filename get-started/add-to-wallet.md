@@ -48,25 +48,26 @@ If automatic methods don't work, add the network manually using these parameters
 
 ### LitVM Testnet
 
-| **Parameter**          | **Value**                                                                                                     |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------- |
-| **Network Name**       | LitVM Testnet                                                                                                 |
-| **RPC URL**            | ⚠️ **⚠️ TBA — This value will be published closer to launch** — This value will be published closer to launch |
-| **Chain ID**           | ⚠️ **⚠️ TBA — This value will be published closer to launch** — This value will be published closer to launch |
-| **Currency Symbol**    | zkLTC                                                                                                         |
-| **Block Explorer URL** | ⚠️ **⚠️ TBA — This value will be published closer to launch** — This value will be published closer to launch |
+| **Parameter**          | **Value**                                        |
+| ---------------------- | ------------------------------------------------ |
+| **Network Name**       | LitVM LiteForge                                  |
+| **RPC URL (HTTP)**     | https://liteforge.rpc.caldera.xyz/http           |
+| **RPC URL (WebSocket)**| wss://liteforge.rpc.caldera.xyz/ws               |
+| **Chain ID**           | 4441                                             |
+| **Currency Symbol**    | zkLTC                                            |
+| **Block Explorer URL** | https://liteforge.explorer.caldera.xyz           |
 
-⚠️ **Note**: Testnet parameters will be confirmed at launch (Q1 2026). Check our official channels for the latest details.
+✅ **Note**: Testnet is live! Connect your wallet and start building.
 
-### LitVM Mainnet(Coming Soon)
+### LitVM Mainnet (Coming Soon)
 
-| **Parameter**          | **Value**                                                                                                     |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------- |
-| **Network Name**       | LitVM                                                                                                         |
-| **RPC URL**            | ⚠️ **⚠️ TBA — This value will be published closer to launch** — This value will be published closer to launch |
-| **Chain ID**           | ⚠️ **⚠️ TBA — This value will be published closer to launch** — This value will be published closer to launch |
-| **Currency Symbol**    | zkLTC                                                                                                         |
-| **Block Explorer URL** | ⚠️ **⚠️ TBA — This value will be published closer to launch** — This value will be published closer to launch |
+| **Parameter**          | **Value**                                        |
+| ---------------------- | ------------------------------------------------ |
+| **Network Name**       | LitVM                                            |
+| **RPC URL**            | TBA — Mainnet launch date TBD                    |
+| **Chain ID**           | TBA — Mainnet launch date TBD                    |
+| **Currency Symbol**    | zkLTC                                            |
+| **Block Explorer URL** | TBA — Mainnet launch date TBD                    |
 
 ***
 
@@ -93,11 +94,11 @@ If automatic methods don't work, add the network manually using these parameters
 
 Enter the network details:
 
-* Network Name: LitVM Testnet
-* New RPC URL: ⚠️ **⚠️ TBA — This value will be published closer to launch** — This value will be published closer to launch
-* Chain ID: ⚠️ **⚠️ TBA — This value will be published closer to launch** — This value will be published closer to launch
+* Network Name: LitVM LiteForge
+* New RPC URL: https://liteforge.rpc.caldera.xyz/http
+* Chain ID: 4441
 * Currency Symbol: zkLTC
-* Block Explorer URL: ⚠️ **⚠️ TBA — This value will be published closer to launch** — This value will be published closer to launch
+* Block Explorer URL: https://liteforge.explorer.caldera.xyz
 {% endstep %}
 
 {% step %}

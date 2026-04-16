@@ -163,16 +163,18 @@ LitVM's mainnet will be deployed in three phases:
 
 ## Network Parameters (Testnet)
 
-| **Parameter**       | **Value**                                                  |
-| ------------------- | ---------------------------------------------------------- |
-| **Network Name**    | LitVM Testnet                                              |
-| **Chain ID**        | ⚠️ **TBA** — This value will be published closer to launch |
-| **Native Currency** | zkLTC                                                      |
-| **Block Time**      | Variable (on-demand)                                       |
-| **Gas Limit**       | 32,000,000 (effective)                                     |
-| **EVM Version**     | Shanghai                                                   |
+| **Parameter**       | **Value**                              |
+| ------------------- | -------------------------------------- |
+| **Network Name**    | LitVM LiteForge                        |
+| **Chain ID**        | 4441                                   |
+| **Native Currency** | zkLTC                                  |
+| **RPC URL**         | https://liteforge.rpc.caldera.xyz/http |
+| **Block Explorer**  | https://liteforge.explorer.caldera.xyz |
+| **Block Time**      | Variable (on-demand)                   |
+| **Gas Limit**       | 32,000,000 (effective)                 |
+| **EVM Version**     | Shanghai                               |
 
-Note: Final parameters will be confirmed at testnet launch.
+✅ Testnet is live and ready for development.
 
 ## Security Considerations
 
