@@ -34,6 +34,7 @@
   * [Espresso](https://www.espressosys.com/)
   * [Lunar Digital Assets](https://www.lunardigitalassets.io/)
 * [Goldsky (Indexing)](integrations/goldsky.md)
+* [DIA (Oracle)](integrations/dia.md)
 
 ## Other Resources
 
