@@ -35,6 +35,7 @@
   * [Lunar Digital Assets](https://www.lunardigitalassets.io/)
 * [Goldsky (Indexing)](integrations/goldsky.md)
 * [DIA (Oracle)](integrations/dia.md)
+* [Safe (Multisig)](integrations/safe.md)
 
 ## Other Resources
 
