@@ -32,11 +32,11 @@ DIA is a cross-chain, trustless oracle network delivering verifiable price feeds
 | LitVM Testnet | USDT       | Market | [0xd7ff0A3DdE1FdC2137Ff4CaAde5396f009739645](https://liteforge.explorer.caldera.xyz/address/0xd7ff0A3DdE1FdC2137Ff4CaAde5396f009739645) |
 | LitVM Testnet | ETH        | Market | [0xc760B46beF9eD3F9A3d2b825164324D6703F0185](https://liteforge.explorer.caldera.xyz/address/0xc760B46beF9eD3F9A3d2b825164324D6703F0185) |
 | LitVM Testnet | BTC        | Market | [0x7d0445782E383223c7B4B660bb96b87213e9b605](https://liteforge.explorer.caldera.xyz/address/0x7d0445782E383223c7B4B660bb96b87213e9b605) |
-| LitVM Testnet | LTC/USD    | Market | [TBD](https://liteforge.explorer.caldera.xyz/) |
-| LitVM Testnet | XAU/USD    | Market | [TBD](https://liteforge.explorer.caldera.xyz/) |
-| LitVM Testnet | XAG/USD    | Market | [TBD](https://liteforge.explorer.caldera.xyz/) |
-| LitVM Testnet | WTI/USD    | Market | [TBD](https://liteforge.explorer.caldera.xyz/) |
-| LitVM Testnet | XBR/USD    | Market | [TBD](https://liteforge.explorer.caldera.xyz/) |
+| LitVM Testnet | LTC/USD    | Market | [0x45dDa5d881BD2C917976CCfde74fFd6f6412da29](https://liteforge.explorer.caldera.xyz/address/0x45dDa5d881BD2C917976CCfde74fFd6f6412da29) |
+| LitVM Testnet | XAU/USD    | Market | [0x519A391D8999F0A18E1E9A5649FEA3D942A1bDdF](https://liteforge.explorer.caldera.xyz/address/0x519A391D8999F0A18E1E9A5649FEA3D942A1bDdF) |
+| LitVM Testnet | XAG/USD    | Market | [0xfb49F5C1eFF83Cc392357Cb979a9432C90eE0eb7](https://liteforge.explorer.caldera.xyz/address/0xfb49F5C1eFF83Cc392357Cb979a9432C90eE0eb7) |
+| LitVM Testnet | WTI/USD    | Market | [0x9cee709Fc9Da87d958a468859b8C02d591b7245A](https://liteforge.explorer.caldera.xyz/address/0x9cee709Fc9Da87d958a468859b8C02d591b7245A) |
+| LitVM Testnet | XBR/USD    | Market | [0x41bb23dD937C5733BF8c0826b9d99d89790c0cAF](https://liteforge.explorer.caldera.xyz/address/0x41bb23dD937C5733BF8c0826b9d99d89790c0cAF) |
 
 ## How to Access Data
 
