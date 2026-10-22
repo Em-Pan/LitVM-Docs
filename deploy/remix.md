@@ -80,7 +80,7 @@ Open Compiler
 Configure Compiler
 
 * **Compiler Version** : Select 0.8.19 (or match your pragma)
-* **EVM Version** : Leave as default or select shanghai
+* **EVM Version** : Choose a target supported by the network’s execution environment. Check [EVM Differences](../deploy-on-testnet/evm-differences.md) and current network release guidance before using newer compiler features; the IDE default may target unsupported opcodes.
 * Enable **Auto compile** for convenience
 {% endstep %}
 

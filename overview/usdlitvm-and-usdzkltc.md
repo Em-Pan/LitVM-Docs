@@ -2,45 +2,38 @@
 
 LitVM operates with a dual-token model designed to align incentives across the ecosystem while maintaining the principles of hard money. Each token serves a distinct purpose in powering the network.
 
-## zkLTC — The Gas Token
+## zkLTC — The Gas Asset
 
 ### What is zkLTC?
 
-**zkLTC** is a fully-collateralized representation of Litecoin (LTC) on LitVM. It serves as the **native gas token** for all transactions on the network and the primary base asset for DeFi protocols.
+zkLTC is designed to represent native Litecoin (LTC) in the EVM ecosystem. Under LitVM’s V2 architecture, it exists as an ERC-20-compatible asset on Ethereum and moves between Ethereum and LitVM through Arbitrum infrastructure. Within LitVM, zkLTC is intended to serve as the native gas asset and a base asset for applications.
 
-### How zkLTC Works
+### How zkLTC fits into the architecture
 
-<figure><img src="../.gitbook/assets/image7.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/v2-zkltc.svg" alt="Native LTC on Litecoin is represented through the Charms integration as zkLTC on Ethereum; Arbitrum infrastructure connects zkLTC to LitVM, where it is intended for gas and applications."><figcaption>zkLTC’s role in the V2 architecture.</figcaption></figure>
 
-### Key Properties
+| Component | Role |
+| --- | --- |
+| Native LTC | The underlying asset on Litecoin |
+| Charms integration | Proof-based interoperability for representing LTC on EVM |
+| zkLTC on Ethereum | ERC-20-compatible asset |
+| Arbitrum infrastructure | Ethereum ↔ LitVM movement |
+| zkLTC on LitVM | Intended native gas asset and an asset used by applications |
 
-| **Property**    | **Description**                                           |
-| --------------- | --------------------------------------------------------- |
-| **1:1 Backing** | Every zkLTC is backed by LTC locked on Litecoin mainchain |
-| **Trustless**   | Bridging uses ZK proofs—no custodians or multisig         |
-| **Gas Token**   | Used to pay transaction fees on LitVM                     |
-| **Base Asset**  | Primary liquidity pair for DeFi protocols                 |
-| **Redeemable**  | Can always be bridged back to native LTC                  |
+### zkLTC and conventional wrapped LTC
 
-### zkLTC Use Cases
+A conventional custodial wrapped asset depends on an issuer or custodian to manage its representation. LitVM’s Charms integration is designed around cryptographic validation of asset state and transitions.
 
-* **Transaction Fees**: Pay gas for smart contract interactions
-* **DeFi Collateral**: Use as collateral in lending protocols
-* **Trading Pairs**: Base pair for DEX liquidity pools
-* **Yield Strategies**: Earn rewards by engaging in yield markets
-* **Cross-Chain Transfers**: Move value across connected chains
+Client-side asset validation, native LTC ownership, Ethereum settlement, and the Arbitrum connection are distinct parts of the complete route. Issuance, backing, redemption conditions, and operational availability must be established by the released integration documentation; they should not be inferred from the general protocol description.
 
-### Why zkLTC Instead of Wrapped LTC?
+See [Charms Protocol](charms.md) for the validation model and [Network Status](../resources/network-status.md) for availability notes.
 
-Traditional wrapped tokens rely on centralized custodians or multisig schemes. zkLTC is fundamentally different:
+### Intended uses within LitVM
 
-| **Aspect**            | **Wrapped LTC (Traditional)** | **zkLTC (BitcoinOS)**   |
-| --------------------- | ----------------------------- | ----------------------- |
-| **Custody**           | Third-party custodian         | Non-custodial           |
-| **Trust**             | Trust the custodian           | Trust math (ZK proofs)  |
-| **Verification**      | Off-chain attestation         | On-chain proof          |
-| **Counterparty Risk** | High                          | Minimal                 |
-| **Redemption**        | Depends on custodian          | Guaranteed via protocol |
+* **Transaction fees:** Gas for smart contract interactions.
+* **DeFi applications:** An asset for trading, lending, and collateral where supported.
+* **Liquidity:** A base asset for application liquidity pairs.
+* **Interoperability:** Movement between Ethereum and LitVM through Arbitrum infrastructure.
 
 ***
 
@@ -114,14 +107,14 @@ The dual-token model serves distinct purposes:
 | **Aspect**           | **zkLTC**                      | **$LITVM**             |
 | -------------------- | ------------------------------ | ---------------------- |
 | **Primary Function** | Gas & Base Asset               | Governance & Utility   |
-| **Backing**          | 1:1 with LTC                   | Protocol value         |
-| **Supply**           | Elastic (based on bridged LTC) | Fixed                  |
+| **Backing**          | LTC representation via the Charms integration | Protocol value |
+| **Supply**           | Issuance follows integration rules | Fixed                  |
 | **Use Case**         | Transactions & DeFi            | Voting & Revenue       |
 | **Economic Role**    | Hard money base layer          | Ecosystem coordination |
 
 ### Benefits of Separation
 
-* **Hard Money Preservation**: Gas fees paid in LTC-backed asset maintains Litecoin's monetary properties
+* **Hard Money Preservation**: zkLTC connects the intended gas model with Litecoin as the underlying asset
 * **Clear Incentives**: Governance token aligns long-term stakeholders
 * **Sustainable Economics**: Revenue sharing creates value beyond speculation
 * **Flexible Tokenomics**: Each token can be optimized for its specific role
@@ -130,13 +123,9 @@ The dual-token model serves distinct purposes:
 
 ## Token Launch
 
-### Timeline
+### Availability
 
-| **Milestone**                | **Target**        |
-| ---------------------------- | ----------------- |
-| Testnet Launch               | ✅ Live            |
-| Token Generation Event (TGE) | Following Testnet |
-| Mainnet Activation           | Post-TGE          |
+Refer to [Network Status](../resources/network-status.md) and official announcements for network and launch updates. Testnet zkLTC is used for network testing and is separate from native LTC interoperability through the V2 route.
 
 ### How to Participate
 
@@ -150,7 +139,7 @@ The dual-token model serves distinct purposes:
 
 | **Token**  | **Purpose**           | **Key Feature**                                      |
 | ---------- | --------------------- | ---------------------------------------------------- |
-| **zkLTC**  | Gas & DeFi base asset | 1:1 LTC backing, trustless bridge                    |
+| **zkLTC**  | Intended gas and application asset | LTC representation through Charms and Arbitrum infrastructure |
 | **$LITVM** | Governance & utility  | Majority community-owned/controlled, revenue sharing |
 
 Together, these tokens create a sustainable ecosystem that honors Litecoin's hard money principles while enabling programmable functionality and community governance.

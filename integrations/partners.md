@@ -19,20 +19,19 @@ The **Litecoin Foundation** is the non-profit organization dedicated to advancin
 
 ***
 
-### BitcoinOS
+### Charms Protocol
 
-**BitcoinOS** is the operating system bringing programmability to UTXO blockchains. Their groundbreaking ZK technology enables trustless bridging between Litecoin and LitVM without requiring any changes to Litecoin's base protocol.
+**Charms Protocol** is the Litecoin interoperability layer in LitVM’s V2 architecture. It uses client-side validation and zero-knowledge proofs for programmable assets and state transitions across supported UTXO-based environments.
+
+LitVM is helping fund and co-develop Litecoin and Ethereum support directly with the creator of Charms. The intended integration represents LTC on Ethereum as zkLTC, which connects to LitVM through Arbitrum infrastructure.
 
 **Role in LitVM:**
 
-* Grail Bridge trustless bridging infrastructure
-* BitSNARK ZK verification protocol
-* Cross-chain interoperability (Bitcoin, Cardano, etc.)
-* zkLTC minting and redemption
+* Litecoin interoperability and programmable asset validation.
+* Co-development of Litecoin and Ethereum support.
+* The foundation for zkLTC’s role in the V2 asset flow.
 
-**Key Achievement:** First to verify a ZK proof on Bitcoin mainnet (July 2024, block 853626)
-
-**Learn More:** [bitcoinos.build](https://bitcoinos.build/)
+**Learn More:** [Charms documentation](https://docs.charms.dev/) · [LitVM Charms overview](../overview/charms.md)
 
 ***
 
@@ -47,43 +46,23 @@ The **Litecoin Foundation** is the non-profit organization dedicated to advancin
 * Interactive fraud proof mechanism
 * Advanced compression and batching
 
-**Ecosystem Stats:**
-
-* Billions in TVL across Arbitrum chains
-* 40+ active Orbit chains
-* Battle-tested security model
-
 **Learn More:** [arbitrum.io](https://arbitrum.io/)
 
 ***
 
-### Caldera
+### Zeeve
 
-**Caldera** is a leading infrastructure provider that specializes in deploying and managing Arbitrum Orbit chains. They provide the infrastructure backbone for LitVM's network operations.
+**Zeeve** is replacing Caldera as LitVM’s Rollup-as-a-Service infrastructure provider, supporting chain deployment and network operations.
 
-**Role in LitVM:**
+The migration is in progress. Existing published Caldera-hosted RPC, WebSocket, explorer, and faucet endpoints remain in [Network Configuration](../get-started/network-configuration.md) until replacement endpoints are confirmed.
 
-* Chain deployment and management
-* RPC infrastructure
-* Network monitoring and reliability
-* DevOps and maintenance
-
-**Learn More:** [caldera.xyz](https://caldera.xyz/)
+**Learn More:** [zeeve.io](https://www.zeeve.io/)
 
 ***
 
 ### Succinct
 
-**Succinct** develops SP1, a general-purpose zero-knowledge virtual machine that enables LitVM to generate validity proofs for all chain execution, creating a hybrid rollup architecture.
-
-**Role in LitVM:**
-
-* SP1 zkVM integration
-* Validity proof generation
-* Fast finality (minutes vs. 7-day challenge period)
-* Cost-efficient proving ($0.01-0.02 per transaction)
-
-**Key Innovation:** SP1 allows developers to write ZK programs in standard Rust code, making ZK accessible to all developers.
+**Succinct** provides zkVM technology for the proving component of LitVM’s architecture. Its role is separate from Charms’ validation of programmable asset state.
 
 **Learn More:** [succinct.xyz](https://succinct.xyz/)
 
@@ -91,16 +70,9 @@ The **Litecoin Foundation** is the non-profit organization dedicated to advancin
 
 ### Espresso Systems
 
-**Espresso** provides the shared sequencer infrastructure that ensures LitVM's transaction ordering is decentralized and censorship-resistant.
+**Espresso** provides the sequencing component of LitVM’s architecture, supporting transaction ordering and cross-chain coordination.
 
-**Role in LitVM:**
-
-* Shared sequencer mechanism
-* Decentralized block ordering
-* Cross-chain composability
-* Censorship resistance
-
-**Key Benefit:** Distributes block proposals across a permissionless node network, preventing any single entity from controlling transaction ordering.
+See [Network Status](../resources/network-status.md) for network-specific availability notes for proving and sequencing integrations.
 
 **Learn More:** [espressosys.com](https://espressosys.com/)
 
@@ -140,43 +112,16 @@ The **Litecoin Foundation** is the non-profit organization dedicated to advancin
 
 ***
 
-## Why These Partners?
+## Complementary roles
 
-{% stepper %}
-{% step %}
-#### Battle-Tested Technology
-
-Every partner brings production-proven infrastructure and best-in-class achievements:
-
-* Arbitrum: Billions in TVL
-* BitcoinOS: First ZK proof on Bitcoin mainnet
-* Succinct: Powers major zkRollups
-* Espresso: Provides best-in-class sequencer decentralization
-{% endstep %}
-
-{% step %}
-#### Aligned Values
-
-Partners share LitVM's commitment to:
-
-* Decentralization
-* Trustless security
-* Open-source development
-* Community governance
-{% endstep %}
-
-{% step %}
-#### Complementary Expertise
-
-Each partner fills a critical role:
-
-* **BitcoinOS** : UTXO bridging
-* **Arbitrum** : EVM execution
-* **Succinct** : ZK proving
-* **Espresso** : Sequencing
-* **Caldera** : Infrastructure
-{% endstep %}
-{% endstepper %}
+| Component | Role |
+| --- | --- |
+| Charms Protocol | Litecoin interoperability and programmable asset validation |
+| Arbitrum | EVM execution framework and Ethereum ↔ LitVM connection |
+| Ethereum | LitVM settlement |
+| Succinct | Proving technology |
+| Espresso | Sequencing |
+| Zeeve | RaaS infrastructure migration target |
 
 ***
 
@@ -198,9 +143,9 @@ LitVM is actively seeking partners across:
 | **Partner**                                            | **Category**   | **Role**                |
 | ------------------------------------------------------ | -------------- | ----------------------- |
 | [Litecoin Foundation](https://litecoin.com/)           | Ecosystem      | Endorsement & Community |
-| [BitcoinOS](https://bitcoinos.build/)                  | Infrastructure | Trustless Bridging      |
+| [Charms Protocol](https://docs.charms.dev/)                  | Infrastructure | Litecoin Interoperability      |
 | [Arbitrum](https://arbitrum.io/)                       | Infrastructure | Rollup Technology       |
-| [Caldera](https://caldera.xyz/)                        | Infrastructure | EVM Infra Management    |
+| [Zeeve](https://www.zeeve.io/)                        | Infrastructure | RaaS Infrastructure    |
 | [Succinct](https://succinct.xyz/)                      | Infrastructure | ZK Proving              |
 | [Espresso](https://espressosys.com/)                   | Infrastructure | Shared Sequencing       |
 | [Goldsky](https://goldsky.com/)                        | Data & Indexing | Subgraph & Data Infra  |

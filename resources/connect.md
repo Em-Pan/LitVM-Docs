@@ -71,7 +71,7 @@ In-depth content:
 
 ## Related Communities
 
-<table data-view="cards"><thead><tr><th>Community</th><th data-card-target data-type="content-ref">Link</th></tr></thead><tbody><tr><td>Litecoin Foundation</td><td><a href="https://twitter.com/LTCFoundation">https://twitter.com/LTCFoundation</a></td></tr><tr><td>BitcoinOS</td><td><a href="https://twitter.com/BTC_OS">https://twitter.com/BTC_OS</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th>Community</th><th data-card-target data-type="content-ref">Link</th></tr></thead><tbody><tr><td>Litecoin Foundation</td><td><a href="https://twitter.com/LTCFoundation">https://twitter.com/LTCFoundation</a></td></tr><tr><td>Charms Protocol</td><td><a href="https://docs.charms.dev/">https://docs.charms.dev/</a></td></tr></tbody></table>
 
 ***
 

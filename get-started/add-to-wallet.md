@@ -44,6 +44,8 @@ The easiest way to add LitVM is through our network configuration page:
 
 ## Manual Configuration
 
+The values below are also listed in [Network Configuration](network-configuration.md). Keep using the published endpoints until replacements are confirmed during the Zeeve migration.
+
 If automatic methods don't work, add the network manually using these parameters:
 
 ### LitVM Testnet

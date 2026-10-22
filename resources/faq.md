@@ -10,7 +10,7 @@ Find answers to common questions about LitVM, its technology, and how to get sta
 
 <summary>What is LitVM?</summary>
 
-LitVM (Litecoin Virtual Machine) is Litecoin's first trustless EVM rollup. It's an EVM-compatible smart contract platform built on Arbitrum Orbit and powered by BitcoinOS technology, enabling Web3 functionality such as Litecoin yield markets, RWA platforms, DeFi, NFTs, and programmable applications while inheriting Litecoin's proof-of-work security.
+LitVM is an EVM-compatible Arbitrum Orbit chain using Ethereum settlement. It connects Litecoin assets with EVM applications through Charms Protocol and Arbitrum infrastructure. Litecoin secures native LTC ownership; Ethereum provides settlement for the LitVM chain.
 
 </details>
 
@@ -26,9 +26,7 @@ Yes. LitVM is officially endorsed by the Litecoin Foundation, making it the firs
 
 <summary>When will LitVM launch?</summary>
 
-* **Testnet:** ✅ Live — visit the [LitVM Testnet Hub](https://testnet.litvm.com) to get started
-* **Token Generation Event (TGE):** Following testnet
-* **Mainnet:** After TGE and security audits
+Use the [LitVM Testnet Hub](https://testnet.litvm.com) for testnet access. Refer to [Network Status](network-status.md) and official announcements for mainnet availability, token launch information, and V2 integration updates.
 
 </details>
 
@@ -40,14 +38,7 @@ Yes. LitVM is officially endorsed by the Litecoin Foundation, making it the firs
 
 <summary>How does LitVM work?</summary>
 
-LitVM is an Arbitrum Orbit chain (rollup) that:
-
-1. Executes smart contracts using Arbitrum Nitro (EVM-compatible)
-2. Uses Succinct zkVM to generate validity proofs
-3. Bridges LTC trustlessly via BitcoinOS Grail bridge
-4. Bridges ETH and ERC-20s via the Arbitrum Bridge
-5. Decentralizes sequencing through Espresso shared sequencer
-6. Initially settles on Ethereum, then migrates to Litecoin mainchain
+LitVM uses Arbitrum Orbit and Nitro for EVM-compatible execution and Ethereum for settlement. Charms provides the Litecoin interoperability layer. The intended asset route is **Litecoin → Charms / zkLTC → Ethereum → Arbitrum → LitVM**. Succinct and Espresso provide the proving and sequencing components of the architecture. See [Architecture](../overview/architecture.md).
 
 </details>
 
@@ -55,25 +46,15 @@ LitVM is an Arbitrum Orbit chain (rollup) that:
 
 <summary>Is LitVM a zkRollup or Optimistic Rollup?</summary>
 
-LitVM is a hybrid rollup that combines both:
-
-* **Optimistic execution** for fast transaction processing
-* **ZK validity proofs** for cryptographic security guarantees
-
-This gives the speed of optimistic rollups with the security of zkRollups.
+LitVM is built on Arbitrum Orbit and Nitro. Its architecture includes Succinct technology for proving. The execution framework, execution proving, and Charms asset validation are separate components; the presence of ZK technology alone does not establish the operating mode of the deployed rollup. See [Architecture](../overview/architecture.md) and [Network Status](network-status.md) for component roles and availability.
 
 </details>
 
 <details>
 
-<summary>What makes the LTC bridge trustless?</summary>
+<summary>How does Charms validate asset movement?</summary>
 
-Unlike traditional bridges that rely on multisig custodians, LitVM uses BitcoinOS's Grail bridge which:
-
-* Uses ZK-SNARK proofs to verify locked LTC
-* Requires only 1 honest validator (vs. majority consensus)
-* Never places funds in third-party custody
-* Provides mathematical guarantees, not trust assumptions
+Charms uses client-side validation and zero-knowledge proofs to establish the validity of asset state and transitions. The intended LitVM route combines the Charms integration between Litecoin and Ethereum with Arbitrum infrastructure between Ethereum and LitVM. Security and operational conditions of the complete route depend on those integrations. See [Charms Protocol](../overview/charms.md).
 
 </details>
 
@@ -81,7 +62,7 @@ Unlike traditional bridges that rely on multisig custodians, LitVM uses BitcoinO
 
 <summary>How do I bridge assets from Ethereum?</summary>
 
-LitVM supports the standard **Arbitrum Bridge** for EVM-native assets like ETH, USDC, and other ERC-20 tokens. This provides a familiar bridging experience for Ethereum users and access to deep EVM liquidity.
+Arbitrum infrastructure provides the Ethereum ↔ LitVM connection in the V2 architecture, including the movement of zkLTC. Use the released LitVM Bridge instructions for the relevant network and asset. Refer to [Network Status](network-status.md) for availability information.
 
 </details>
 
@@ -105,12 +86,7 @@ Yes, a few minor ones. Most notably, `block.number` returns the approximate Ethe
 
 <summary>What's the difference between zkLTC and wrapped LTC?</summary>
 
-| zkLTC                        | Wrapped LTC (Traditional)      |
-| ---------------------------- | ------------------------------ |
-| Trustless ZK-verified        | Custodian-dependent            |
-| Non-custodial                | Third-party custody            |
-| 1/n security (1 honest node) | m-of-n trust (honest majority) |
-| On-chain verification        | Off-chain attestation          |
+zkLTC is designed to represent LTC on EVM through the Charms integration, using cryptographic validation of asset state and transitions. A conventional custodial wrapped asset depends on an issuer or custodian. The complete zkLTC route also uses Ethereum and Arbitrum infrastructure; backing, issuance, and redemption conditions must be established by the integration documentation. See [zkLTC](../overview/usdlitvm-and-usdzkltc.md).
 
 </details>
 
@@ -124,13 +100,7 @@ Yes, a few minor ones. Most notably, `block.number` returns the approximate Ethe
 
 <summary>What is zkLTC?</summary>
 
-zkLTC is a 1:1 representation of LTC on LitVM. When you bridge LTC to LitVM via the BitcoinOS Grail bridge, you receive zkLTC which is used for:
-
-* Gas fees (transaction costs)
-* DeFi protocols (trading, lending, etc.)
-* The primary base asset on LitVM
-
-Every zkLTC is backed by LTC locked on the Litecoin mainchain.
+zkLTC is designed to represent native LTC in the EVM ecosystem. In the V2 architecture, it exists as an ERC-20-compatible asset on Ethereum and moves into LitVM through Arbitrum infrastructure. Within LitVM, it is intended to serve as the native gas asset and an asset used by applications. Testnet zkLTC is separate from native LTC interoperability; see [Network Status](network-status.md).
 
 </details>
 
@@ -178,10 +148,7 @@ See our Add to Your Wallet guide. You can:
 
 <summary>How do I get testnet zkLTC?</summary>
 
-1. Add LitVM Testnet to your wallet
-2. Visit the Testnet Faucet
-3. Connect your wallet and request zkLTC
-4. Tokens arrive in \~30 seconds
+Add the testnet to your wallet, then visit the [LitVM Testnet Hub](https://testnet.litvm.com) and select **Get zkLTC**. Follow the faucet instructions. Testnet tokens are for testing and do not represent a deposit through the V2 interoperability route.
 
 </details>
 
@@ -218,13 +185,7 @@ Use Solidity, Vyper, or any EVM-compatible language.
 
 <summary>What are gas fees like?</summary>
 
-LitVM targets sub-cent transaction fees, with typical costs:
-
-* Simple transfer: \~$0.001
-* DEX swap: \~$0.01-0.02
-* Contract deployment: \~$0.05-0.50
-
-Fees are paid in zkLTC.
+Fees depend on transaction execution and L1 data posting costs. Use your wallet or developer tooling to estimate the current fee before submitting a transaction. The intended gas asset within LitVM is zkLTC. See [Gas and Fees](../deploy-on-testnet/evm-differences.md#gas-and-fees).
 
 </details>
 
@@ -236,14 +197,7 @@ Fees are paid in zkLTC.
 
 <summary>Is LitVM safe?</summary>
 
-LitVM inherits security from multiple layers:
-
-1. **Litecoin:** 14+ years of uninterrupted PoW security
-2. **Ethereum:** World's most decentralized smart contract platform (Phase 1 settlement)
-3. **ZK Proofs:** Mathematical guarantees of execution correctness
-4. **Espresso:** Decentralized sequencing prevents censorship
-5. **BitcoinOS Grail:** Non-custodial bridging with 1/n security
-6. **Arbitrum Bridge:** Battle-tested rollup bridge for EVM assets
+The architecture has several security boundaries: Litecoin secures native LTC, Charms validates programmable asset state and transitions, Arbitrum infrastructure connects Ethereum and LitVM, and Ethereum provides LitVM settlement. Evaluate the deployed integrations, their operating conditions, and integration-specific audit information. No component description establishes a guarantee for the complete route.
 
 </details>
 
@@ -251,7 +205,7 @@ LitVM inherits security from multiple layers:
 
 <summary>Has LitVM been audited?</summary>
 
-Audits are in progress. Results will be published publicly. Component technologies (Arbitrum Nitro, BitcoinOS, SP1) have undergone separate audits.
+Use published LitVM security announcements and audit reports to assess the relevant deployment. An audit of an underlying technology is distinct from an audit of its LitVM integration. See [Network Status](network-status.md) and [Official Channels](connect.md).
 
 </details>
 
@@ -259,11 +213,7 @@ Audits are in progress. Results will be published publicly. Component technologi
 
 <summary>What happens if the sequencer goes down?</summary>
 
-Espresso's shared sequencer provides redundancy. If primary sequencers fail:
-
-* Other sequencers in the network continue operation
-* Users can force-include transactions via L1
-* Funds are never at risk—you can always withdraw via the bridge
+A sequencing interruption can affect transaction inclusion and confirmation. Recovery and any L1 inclusion or withdrawal mechanisms depend on the deployed chain configuration. Check official network updates and the released operating instructions for the relevant network.
 
 </details>
 
@@ -271,11 +221,7 @@ Espresso's shared sequencer provides redundancy. If primary sequencers fail:
 
 <summary>Are my funds safe if LitVM has issues?</summary>
 
-Yes. Because zkLTC is backed 1:1 by LTC on Litecoin mainchain:
-
-* You can always bridge back to native LTC
-* Proofs are verified on-chain
-* No single entity can steal funds
+Cross-chain access and redemption depend on the affected infrastructure layer and the integration’s operating conditions. Check official network updates and use the released bridge and support instructions. The presence of cryptographic proofs alone does not establish uninterrupted access or redemption.
 
 </details>
 
@@ -300,15 +246,7 @@ Yes, fully EVM-equivalent. Deploy the same contracts you'd deploy on Ethereum, A
 
 <summary>Where can I find the RPC endpoints?</summary>
 
-**Testnet:**
-
-```
-RPC URL: https://liteforge.rpc.caldera.xyz/http
-Chain ID: 4441
-Explorer: https://liteforge.explorer.caldera.xyz
-```
-
-**Mainnet:** Coming after TGE
+See [Network Configuration](../get-started/network-configuration.md) for published testnet RPC, WebSocket, explorer, and faucet details. Existing Caldera-hosted endpoints remain documented during the migration to Zeeve. Mainnet connection details will be added when confirmed.
 
 </details>
 
@@ -353,7 +291,7 @@ Explorer: https://liteforge.explorer.caldera.xyz
 
 <summary>Will stablecoins be available?</summary>
 
-Yes. USDC, USDT and other stablecoins can also be bridged from Ethereum via the Arbitrum Bridge. We also expect Litecoin-based stablecoins to make an appearance on LitVM.
+The architecture supports an Ethereum ↔ LitVM connection through Arbitrum infrastructure. Availability of particular stablecoins or other assets depends on the deployed integrations and announced asset support. Use the released asset list and bridge instructions for the relevant network.
 
 </details>
 
@@ -361,24 +299,7 @@ Yes. USDC, USDT and other stablecoins can also be bridged from Ethereum via the 
 
 <summary>Can I bridge assets other than LTC?</summary>
 
-Yes! LitVM has a dual bridge architecture:
-
-From Litecoin (BitcoinOS Grail Bridge):
-
-* LTC → zkLTC
-
-From Ethereum (Arbitrum Bridge):
-
-* ETH
-* USDC, USDT, and other stablecoins
-* ERC-20 tokens
-
-Future support planned for Litecoin-native assets:
-
-* Litecoin Ordinals
-* Litecoin Runes
-* LTC-20 tokens
-* BitcoinOS Charms
+The V2 architecture distinguishes Charms-based Litecoin interoperability from the Arbitrum connection between Ethereum and LitVM. Availability of ETH, ERC-20 tokens, or particular Litecoin-native assets depends on the released integrations. Use the announced asset list rather than assuming that every asset supported by an underlying protocol is available through LitVM.
 
 </details>
 
@@ -410,7 +331,7 @@ $LITVM holders and/or stakers receive a share of sequencer fees—the fees gener
 
 <summary>Why does LitVM have two tokens?</summary>
 
-zkLTC serves as the gas token (1:1 backed by LTC), while $LITVM is the governance and utility token. This separation preserves Litecoin's hard money properties for transactions while enabling community coordination and revenue sharing through a dedicated governance token.
+zkLTC is intended as the gas and application asset, connecting LitVM with LTC as the underlying asset through the Charms integration. $LITVM serves governance and utility purposes. See [$LITVM & $zkLTC](../overview/usdlitvm-and-usdzkltc.md).
 
 </details>
 
@@ -444,19 +365,7 @@ zkLTC serves as the gas token (1:1 backed by LTC), while $LITVM is the governanc
 
 <summary>Bridge transaction not completing</summary>
 
-For LTC bridging (BitcoinOS Grail):
-
-1. Ensure you have enough LTC for fees on mainchain
-2. Wait for sufficient confirmations (may take several blocks)
-3. Check bridge UI for status
-
-For ETH/ERC-20 bridging (Arbitrum Bridge):
-
-1. Ensure transaction confirmed on Ethereum
-2. Wait for the standard confirmation period
-3. Check Arbitrum Bridge UI for status
-
-Contact support in Telegram if issues persist >1 hour.
+Check which part of the route is affected: Litecoin ↔ Ethereum through the Charms integration, or Ethereum ↔ LitVM through Arbitrum infrastructure. Record the source and destination networks, transaction hashes, and the status shown by the bridge. Follow the released instructions for the relevant network and contact [official support](connect.md) if the issue persists. Never share private keys or recovery phrases.
 
 </details>
 
