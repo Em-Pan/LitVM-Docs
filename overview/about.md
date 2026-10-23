@@ -25,13 +25,13 @@ layout:
 
 ## What is LitVM?
 
-LitVM (Litecoin Virtual Machine) is Litecoin's first trustless EVM rollup, designed to unlock the full spectrum of Web3 functionality for the Litecoin community. Endorsed by the Litecoin Foundation, LitVM transforms Litecoin from a payment-focused network into a fully programmable Web3 ecosystem.
+LitVM (Litecoin Virtual Machine) is an EVM-compatible Arbitrum Orbit chain using Ethereum settlement, designed to connect Litecoin assets with programmable applications. Endorsed by the Litecoin Foundation, LitVM transforms Litecoin from a payment-focused network into a fully programmable Web3 ecosystem.
 
-Built using Arbitrum Nitro and powered by BitcoinOS technology, LitVM delivers a decentralized, EVM-compatible smart contract layer on Litecoin—enabling Web3 functionality such as DeFi, real-world asset (RWA) tokenization, yield opportunities, and AI-driven applications while inheriting Litecoin's battle-tested proof-of-work security.
+Powered by Arbitrum Nitro, LitVM supports EVM applications such as DeFi, real-world asset (RWA) tokenization, yield markets, and AI-driven applications. Charms provides the Litecoin interoperability layer. Litecoin secures native LTC ownership; Ethereum provides settlement for the LitVM chain.
 
 ## Hard Money Web3
 
-LitVM follows the mantra of "Hard Money Web3"—bringing the principles of hard money (scarcity, security, and decentralization) to programmable blockchain applications. By bridging trustless native Litecoin and Litecoin-native assets via BitcoinOS's ZK technology, LitVM empowers these decentralized assets with lightning-fast EVM smart contract capabilities.
+LitVM follows the mantra of "Hard Money Web3"—bringing the principles of hard money (scarcity, security, and decentralization) to programmable blockchain applications. The V2 architecture connects native LTC to EVM applications through Charms and Arbitrum infrastructure: Litecoin → Charms / zkLTC → Ethereum → Arbitrum → LitVM. See [Network Status](../resources/network-status.md) for integration availability.
 
 ## Our Mission
 
@@ -47,20 +47,20 @@ LitVM is built around five core objectives:
 
 ### For Litecoin Holders
 
-* Access yield opportunities without giving up custody of your LTC
-* Participate in DeFi protocols using trustlessly bridged Litecoin
+* Explore applications designed to bring Litecoin assets into yield markets
+* Use LTC represented as zkLTC within the intended V2 ecosystem
 * Engage with Litecoin-native assets (LTC, Ordinals, Runes, LTC-20s, Charms) in a programmable environment
 
 ### For Developers
 
 * Deploy EVM-compatible smart contracts using familiar tools (Solidity, Hardhat etc.)
 * Unlock a large and active target market of Litecoin holders
-* Build on Litecoin's 14+ years of proof-of-work security
+* Build EVM applications for the Litecoin community using Ethereum settlement
 * Leverage ZK technology for scalable, low-cost applications
 
 ### For Enterprises
 
-* Tokenize real-world assets with L1-secured infrastructure
+* Develop real-world asset applications using EVM-compatible infrastructure
 * Access institutional-grade yield strategies
 * Build compliant, scalable blockchain solutions
 
@@ -69,20 +69,20 @@ LitVM is built around five core objectives:
 | Feature            | Description                                                                                                                                                                                                        |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | EVM Compatibility  | <p>Full compatibility with Ethereum tooling and smart contracts<br><sub>See</sub> <a href="../deploy-on-testnet/evm-differences.md"><sub>EVM Differences</sub></a> <sub>for minor behavioral differences</sub></p> |
-| Trustless Bridging | Move LTC to and from LitVM without custodians via BitcoinOS Grail                                                                                                                                                  |
-| ZK Security        | Zero-knowledge proofs provide cryptographic security guarantees                                                                                                                                                    |
-| Low Fees           | Sub-cent transaction fees for retail and enterprise use cases                                                                                                                                                      |
-| High Throughput    | Thousands of transactions per second                                                                                                                                                                               |
+| Asset Interoperability | Charms provides the Litecoin interoperability layer; Arbitrum connects Ethereum and LitVM                                                                                                                                                  |
+| ZK Security        | Charms uses proofs to validate asset state and transitions                                                                                                                                                    |
+| Low Fees           | Designed for low-cost application transactions; estimates depend on network conditions                                                                                                                                                      |
+| High Throughput    | EVM execution designed for application workloads                                                                                                                                                                               |
 
 ## The Litecoin Advantage
 
 Litecoin has been at the forefront of blockchain innovation for over a decade:
 
-* 360+ million lifetime transactions processed
+* A long-established network for peer-to-peer payments
 * 2.5-minute block times (4x faster than Bitcoin)
 * Scrypt-based consensus for broad, decentralized mining
 * First to implement SegWit, Lightning Network, and MimbleWimble (MWEB)
-* 14+ years of uninterrupted operation and security
+* A long-running proof-of-work blockchain
 
 LitVM builds on this foundation, bringing smart contract capabilities to one of the most trusted and widely-used blockchain networks in the world.
 

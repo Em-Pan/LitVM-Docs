@@ -1,188 +1,68 @@
 # Architecture
 
-LitVM is built on a modular, multi-layer architecture that combines the best of Arbitrum's battle-tested rollup technology with BitcoinOS's trustless bridging infrastructure. This design enables LitVM to deliver EVM compatibility, ZK security, and trustless Litecoin integration without requiring any changes to Litecoin's base protocol.
+LitVM is an **EVM-compatible Arbitrum Orbit chain using Ethereum settlement**. It connects Litecoin assets with programmable applications through an interoperability layer built with Charms Protocol.
 
-## Architecture Overview
+## Architecture overview
 
-<figure><img src="../.gitbook/assets/image2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/v2-architecture.svg" alt="LitVM V2: Arbitrum Orbit and Nitro execution with Ethereum settlement. Charms connects native LTC to zkLTC on Ethereum; Arbitrum connects Ethereum to LitVM."><figcaption>Component roles in the V2 design. See Network Status for availability and infrastructure migration notes. Published connection details remain unchanged.</figcaption></figure>
 
-### Core Components
+## Execution and settlement
 
-{% stepper %}
-{% step %}
-### Arbitrum Orbit Rollup
+**Arbitrum Orbit** provides the chain framework, and **Arbitrum Nitro** provides the EVM-compatible execution environment. Developers use familiar smart contract languages and Ethereum tooling, with the differences described in [EVM Differences](../deploy-on-testnet/evm-differences.md).
 
-LitVM is built as an **Arbitrum Orbit chain** using the Nitro tech stack. Arbitrum Orbit enables permissionless deployment of customizable chains with:
+**Ethereum is LitVM’s settlement layer.** Native LTC remains an asset of the Litecoin blockchain; its ownership and security should not be confused with settlement of the LitVM chain.
 
-* **EVM Equivalence** : Full compatibility with Ethereum smart contracts, tooling, and developer experience
-* **Fraud Proofs** : Interactive fraud proof mechanism for transaction validity
-* **Advanced Compression** : Efficient data batching for lower costs
-* **Custom Gas Token** : zkLTC as the native gas token instead of ETH
+## Proving and sequencing
 
-Why Arbitrum Orbit?
+**Succinct** provides the zkVM technology for the proving component of LitVM’s architecture. Proof-based validation of Charms assets and proving of LitVM execution serve different purposes and should be considered separately.
 
-* Battle-tested technology powering billions in TVL
-* Active ecosystem of developers and tooling
-* Continuous upgrades from Offchain Labs
-* Flexibility to customize gas tokens, governance, and more
-{% endstep %}
+**Espresso** provides the sequencing component, supporting transaction ordering and cross-chain coordination. See [Network Status](../resources/network-status.md) for network-specific availability notes.
 
-{% step %}
-### Succinct zkVM Integration
+## Litecoin interoperability
 
-LitVM enhances the Arbitrum Nitro rollup with **Succinct's SP1 zkVM** to generate validity proofs for all chain execution, creating a **hybrid rollup** architecture:
+The intended V2 asset flow is:
 
-* **SP1 zkVM** : General-purpose zero-knowledge virtual machine that can prove execution of any Rust program
-* **Validity Proofs** : Cryptographic proofs that verify correct state transitions
-* **Fast Finality** : Proofs can be verified in minutes rather than the 7-day challenge period of pure optimistic rollups
-* **Cost Efficiency** : Proof costs as low as $0.01-0.02 per transaction
+**Litecoin → Charms / zkLTC → Ethereum → Arbitrum → LitVM**
 
-This hybrid approach combines:
+| Layer | Role |
+| --- | --- |
+| Litecoin | Native LTC ownership and base-chain security |
+| Charms Protocol | Proof-based interoperability for representing LTC on EVM as zkLTC |
+| Ethereum | zkLTC as an ERC-20-compatible asset and settlement for LitVM |
+| Arbitrum infrastructure | Movement of zkLTC between Ethereum and LitVM |
+| LitVM | EVM applications, with zkLTC intended as the native gas asset |
 
-* The immediate execution speed of optimistic rollups
-* The cryptographic security guarantees of ZK rollups
-{% endstep %}
+The route has two underlying infrastructure layers:
 
-{% step %}
-### Espresso Shared Sequencer
+* **Litecoin ↔ Ethereum:** Charms.
+* **Ethereum ↔ LitVM:** Arbitrum.
 
-LitVM utilizes **Espresso's shared sequencer** for decentralized block ordering:
+The **LitVM Bridge** is intended to abstract these steps into one user-facing process. Technical documentation distinguishes the two layers even where the product presents a unified experience.
 
-* **Decentralized Sequencing** : Block proposals distributed across a permissionless node network
-* **Censorship Resistance** : No single entity controls transaction ordering
-* **Cross-Chain Composability** : Shared sequencing enables atomic operations across chains
-* **Network Security** : Multiple independent sequencers provide redundancy
-{% endstep %}
+## zkLTC
 
-{% step %}
-### Dual Bridge Architecture
+zkLTC is designed to represent native LTC in the EVM ecosystem. In the V2 architecture, it exists as an ERC-20-compatible asset on Ethereum and moves into LitVM through Arbitrum infrastructure. Within LitVM, zkLTC is intended to serve as the native gas asset and an asset used by applications.
 
-LitVM features two bridging systems to connect both the Litecoin and Ethereum ecosystems.
+See [$LITVM & $zkLTC](usdlitvm-and-usdzkltc.md) for the distinction between the gas asset and the governance token.
 
-#### BitcoinOS Grail Bridge (Litecoin ↔ LitVM)
+## Infrastructure
 
-The **Grail Bridge** enables trustless LTC movement between Litecoin mainchain and LitVM:
+**Zeeve** is replacing Caldera as LitVM’s Rollup-as-a-Service infrastructure provider. The migration is in progress. Existing published Caldera-hosted connection details remain in [Network Configuration](../get-started/network-configuration.md) until replacement endpoints are confirmed.
 
-How It Works:
+## Security model
 
-1. **Deposit** : User locks LTC in a Taproot address on Litecoin mainchain
-2. **Proof Generation** : BitcoinOS generates a ZK-SNARK proof verifying the locked funds
-3. **Minting** : zkLTC is minted on LitVM at 1:1 ratio
-4. **Withdrawal** : User burns zkLTC on LitVM, proof is verified, LTC is released on mainchain
+Each layer has a distinct responsibility:
 
-Security Model:
+* Litecoin secures native LTC transactions and ownership on its chain.
+* Charms uses client-side validation and cryptographic proofs for programmable asset state and transitions.
+* Arbitrum infrastructure provides the Ethereum ↔ LitVM connection.
+* Ethereum provides settlement for the LitVM chain.
+* Proving, sequencing, and infrastructure services support chain operation according to their integrations.
 
-* **Non-Custodial** : No third party ever holds user funds
-* **1/n Security** : Only one honest validator needed for security
-* **ZK Verification** : Proofs are mathematically verifiable—like solving a math problem with a definitive answer
-* **No Protocol Changes** : Works with existing Litecoin infrastructure
+Security of the complete route depends on the deployed integrations and their operating conditions. A component’s cryptographic properties or audit history do not establish an audit or guarantee for the entire LitVM system.
 
-#### Arbitrum Bridge (Ethereum ↔ LitVM)
+## Network reference
 
-As an Arbitrum Orbit chain, LitVM also supports the standard **Arbitrum Bridge** for EVM-native assets:
-
-Supported Assets:
-
-* ETH
-* USDC, USDT, and other stablecoins
-* ERC-20 tokens
-* Other Ethereum-native assets
-
-How It Works:
-
-1. **Deposit** : User deposits assets on Ethereum (or Arbitrum One) via the bridge contract
-2. **Confirmation** : After sufficient confirmations, assets are credited on LitVM
-3. **Withdrawal** : User initiates withdrawal on LitVM, assets are released after challenge period (or faster with validity proofs)
-
-Benefits:
-
-* Access to Ethereum's deep liquidity
-* Familiar bridging experience for EVM users
-* Standard security model inherited from Arbitrum
-* Gateway for DeFi protocols and stablecoins
-
-#### Bridge Comparison
-
-| **Feature**      | **BitcoinOS Grail**    | **Arbitrum Bridge**    |
-| ---------------- | ---------------------- | ---------------------- |
-| **Source Chain** | Litecoin               | Ethereum / EVM         |
-| **Asset Type**   | LTC → zkLTC            | ETH, ERC-20s           |
-| **Trust Model**  | ZK proofs (1/n)        | Optimistic + ZK hybrid |
-| **Custodian**    | None (non-custodial)   | Bridge contracts       |
-| **Primary Use**  | Onboard Litecoin users | Onboard Ethereum users |
-{% endstep %}
-{% endstepper %}
-
-## Mainnet Rollout Phases
-
-LitVM's mainnet will be deployed in three phases:
-
-{% stepper %}
-{% step %}
-### Phase: Ethereum Settlement + Dual Bridges
-
-* Fully operational Arbitrum Orbit rollup settling on Ethereum
-* Nitro's optimistic architecture with Succinct zkVM validity proofs
-* **BitcoinOS Grail bridge** deployed for trustless LTC bridging
-* **Arbitrum Bridge** available for ETH and ERC-20 assets
-* Espresso shared sequencer for decentralized block ordering
-* zkLTC as gas token and primary base asset
-{% endstep %}
-
-{% step %}
-### Phase: Litecoin Proof Anchoring
-
-* All finalized chain batches anchored to Litecoin blockchain
-* Validity proofs inscribed using standard extended transactions
-* No Litecoin protocol changes required
-* Creates tamper-resistant audit trail secured by Litecoin's PoW
-* Independent verification possible via Litecoin nodes
-{% endstep %}
-
-{% step %}
-### Phase: Litecoin Native Settlement
-
-* Migration of settlement from Ethereum to Litecoin
-* LitVM becomes a fully native Litecoin rollup
-* Litecoin as the canonical settlement and finality layer
-* Complete sovereignty under Litecoin's 14+ years of PoW security
-{% endstep %}
-{% endstepper %}
-
-## Technical Specifications
-
-| **Component**    | **Technology**      | **Purpose**                             |
-| ---------------- | ------------------- | --------------------------------------- |
-| **Execution**    | Arbitrum Nitro      | EVM-compatible smart contract execution |
-| **Proving**      | Succinct SP1 zkVM   | Generate validity proofs                |
-| **Sequencing**   | Espresso            | Decentralized transaction ordering      |
-| **LTC Bridging** | BitcoinOS Grail     | Trustless LTC ↔ zkLTC transfers         |
-| **EVM Bridging** | Arbitrum Bridge     | ETH, stablecoins, ERC-20 transfers      |
-| **Gas Token**    | zkLTC               | Native transaction fee token            |
-| **Settlement**   | Ethereum → Litecoin | State finality and security             |
-
-## Network Parameters (Testnet)
-
-| **Parameter**       | **Value**                              |
-| ------------------- | -------------------------------------- |
-| **Network Name**    | LitVM LiteForge                        |
-| **Chain ID**        | 4441                                   |
-| **Native Currency** | zkLTC                                  |
-| **RPC URL**         | https://liteforge.rpc.caldera.xyz/http |
-| **Block Explorer**  | https://liteforge.explorer.caldera.xyz |
-| **Block Time**      | Variable (on-demand)                   |
-| **Gas Limit**       | 32,000,000 (effective)                 |
-| **EVM Version**     | Shanghai                               |
-
-✅ Testnet is live and ready for development.
-
-## Security Considerations
-
-LitVM inherits security from multiple layers:
-
-1. **Litecoin Mainchain** : 14+ years of uninterrupted PoW security
-2. **Ethereum Settlement** (Phase 1): World's most decentralized smart contract platform
-3. **ZK Proofs** : Mathematical guarantees of execution correctness
-4. **Espresso Sequencing** : Decentralized block production prevents censorship
-5. **BitcoinOS Grail** : Non-custodial bridging with 1/n security
-6. **Arbitrum Bridge** : Battle-tested rollup bridge infrastructure
+* [Network Configuration](../get-started/network-configuration.md) — published RPC, WebSocket, explorer, and faucet details.
+* [Network Status](../resources/network-status.md) — availability and migration notes.
+* [Add to Your Wallet](../get-started/add-to-wallet.md) — wallet setup.

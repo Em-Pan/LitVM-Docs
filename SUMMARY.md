@@ -6,12 +6,13 @@
 
 * [About](overview/about.md)
 * [Architecture](overview/architecture.md)
-* [BitcoinOS Technology](overview/bitcoinos.md)
+* [Charms Protocol](overview/charms.md)
 * [$LITVM & $zkLTC](overview/usdlitvm-and-usdzkltc.md)
 
 ## Get Started on Testnet
 
 * [Testnet Hub](https://testnet.litvm.com)
+* [Network Configuration](get-started/network-configuration.md)
 * [Add to Your Wallet](get-started/add-to-wallet.md)
 * [Testnet Block Explorer](get-started/testnet-block-explorer.md)
 * [Testnet Faucet](get-started/faucet.md)
@@ -27,9 +28,9 @@
 
 * [Core Infra Partners](integrations/partners.md)
   * [Litecoin Foundation](https://litecoin.com/)
-  * [BitcoinOS](https://bitcoinos.build/)
+  * [Charms Protocol](https://docs.charms.dev/)
   * [Arbitrum](https://arbitrum.io/)
-  * [Caldera](https://caldera.xyz/)
+  * [Zeeve](https://www.zeeve.io/)
   * [Succinct](https://www.succinct.xyz/)
   * [Espresso](https://www.espressosys.com/)
   * [Lunar Digital Assets](https://www.lunardigitalassets.io/)
@@ -39,6 +40,7 @@
 
 ## Other Resources
 
+* [Network Status](resources/network-status.md)
 * [Connect](resources/connect.md)
 * [Feedback](resources/feedback.md)
 * [FAQ](resources/faq.md)
