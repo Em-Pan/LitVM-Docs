@@ -10,7 +10,7 @@ zkLTC is designed to represent native Litecoin (LTC) in the EVM ecosystem. Under
 
 ### How zkLTC fits into the architecture
 
-<figure><img src="../.gitbook/assets/v2-zkltc.svg" alt="Native LTC on Litecoin is represented through the Charms integration as zkLTC on Ethereum; Arbitrum infrastructure connects zkLTC to LitVM, where it is intended for gas and applications."><figcaption>zkLTC’s role in the V2 architecture.</figcaption></figure>
+<figure><img src="../.gitbook/assets/v2-zkltc.svg" alt="Native LTC on Litecoin is represented through the Charms integration as zkLTC on Ethereum; Arbitrum infrastructure connects zkLTC to LitVM, where it is intended for gas and applications."><figcaption>zkLTC’s role in the V2 architecture. Testnet tokens are separate from native LTC. Availability follows the released integration.</figcaption></figure>
 
 | Component | Role |
 | --- | --- |

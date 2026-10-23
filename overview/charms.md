@@ -30,7 +30,7 @@ The intended route into LitVM is:
 
 The return route follows the same infrastructure layers in reverse:
 
-<figure><img src="../.gitbook/assets/v2-return-flow.svg" alt="Intended return route: LitVM through Arbitrum to Ethereum, then the Charms integration toward native LTC on Litecoin."><figcaption>Conceptual return route; this diagram does not specify redemption timing or mechanics.</figcaption></figure>
+<figure><img src="../.gitbook/assets/v2-return-flow.svg" alt="Intended return route: LitVM through Arbitrum to Ethereum, then the Charms integration toward native LTC on Litecoin."><figcaption>Conceptual return route, not redemption instructions. Conditions depend on the released integration; this diagram does not specify redemption timing or mechanics.</figcaption></figure>
 
 ## Security boundaries
 

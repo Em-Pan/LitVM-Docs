@@ -4,7 +4,7 @@ LitVM is an **EVM-compatible Arbitrum Orbit chain using Ethereum settlement**. I
 
 ## Architecture overview
 
-<figure><img src="../.gitbook/assets/v2-architecture.svg" alt="LitVM V2: Arbitrum Orbit and Nitro execution with Ethereum settlement. Charms connects native LTC to zkLTC on Ethereum; Arbitrum connects Ethereum to LitVM."><figcaption>Component roles in the V2 design. See Network Status for availability and infrastructure migration notes.</figcaption></figure>
+<figure><img src="../.gitbook/assets/v2-architecture.svg" alt="LitVM V2: Arbitrum Orbit and Nitro execution with Ethereum settlement. Charms connects native LTC to zkLTC on Ethereum; Arbitrum connects Ethereum to LitVM."><figcaption>Component roles in the V2 design. See Network Status for availability and infrastructure migration notes. Published connection details remain unchanged.</figcaption></figure>
 
 ## Execution and settlement
 
