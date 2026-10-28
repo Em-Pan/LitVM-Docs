@@ -233,7 +233,7 @@ Cross-chain access and redemption depend on the affected infrastructure layer an
 
 <summary>Is LitVM EVM-compatible?</summary>
 
-Yes, fully EVM-equivalent. Deploy the same contracts you'd deploy on Ethereum, Arbitrum, or any EVM chain. Standard tooling works:
+Yes. LitVM is EVM-compatible and supports standard Ethereum smart contracts, tooling, and token standards. Some EVM operations behave differently due to the underlying Arbitrum architecture; see [EVM Differences](../deploy-on-testnet/evm-differences.md) for details. Standard tooling includes:
 
 * Solidity/Vyper
 * Hardhat/Foundry/Remix

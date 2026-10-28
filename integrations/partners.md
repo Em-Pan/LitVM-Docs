@@ -42,7 +42,7 @@ LitVM is helping fund and co-develop Litecoin and Ethereum support directly with
 **Role in LitVM:**
 
 * Arbitrum Nitro execution layer
-* EVM equivalence and smart contract support
+* EVM compatibility and smart contract support
 * Interactive fraud proof mechanism
 * Advanced compression and batching
 

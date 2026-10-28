@@ -80,7 +80,7 @@ LitVM's tokenomics prioritize the community over insiders:
 
 <figure><img src="../.gitbook/assets/image3.png" alt=""><figcaption></figcaption></figure>
 
-**51% Community Allocation** — Over half of all tokens are reserved for the community, prioritizing current Litecoin holders and welcoming new ecosystem participants.
+**51% Community Allocation** — Over half of all tokens are reserved for community governance, prioritizing current Litecoin holders and welcoming new ecosystem participants.
 
 ### Revenue Model
 
