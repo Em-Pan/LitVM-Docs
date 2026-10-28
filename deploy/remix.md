@@ -39,28 +39,32 @@ Write the Contract
 Paste this code into Counter.sol:
 
 ```solidity
-// SPDX-License-Identifier: MIT
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.19;
+
 contract Counter {
-uint256 public count;
-event CountChanged(uint256 new Count);
-constructor(uint256_initialCount){
-count = _initialCount;
+    uint256 public count;
+    event CountChanged(uint256 newCount);
+
+    constructor(uint256 _initialCount) {
+        count = _initialCount;
+    }
+
+    function increment() public {
+        count += 1;
+        emit CountChanged(count);
+    }
+
+    function decrement() public {
+        require(count > 0, "Count cannot go below zero");
+        count -= 1;
+        emit CountChanged(count);
+    }
+
+    function getCount() public view returns (uint256) {
+        return count;
+    }
 }
-function increment() public {
-count += 1;
-emit CountChanged(count);
-}
-function decrement() public {
-require(count > 0, "Count cannot go below zero");
-count -= 1;
-emit CountChanged(count);
-}
-functiongetCount() publicviewreturns(uint256){
-returncount;
-}
-}
-
 ```
 {% endstep %}
 {% endstepper %}
@@ -239,10 +243,9 @@ Verify
 
 {% stepper %}
 {% step %}
-Install OpenZeppelin
+Use a Versioned OpenZeppelin Import
 
-1. In Remix, go to **Plugin Manager**
-2. Search for and activate **DGIT** or **Remixd** for GitHub imports
+The example below pins OpenZeppelin Contracts to version **4.9.6**, which supports the documented Solidity **0.8.19** compiler. Remix resolves the versioned npm import automatically when compiling; no additional plugin is needed for this import.
 {% endstep %}
 
 {% step %}
@@ -251,13 +254,15 @@ Create Token Contract
 Create MyToken.sol:
 
 ```solidity
-// SPDX-License-Identifier: MIT
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.19;
-import"@openzeppelin/contracts/token/ERC20/ERC20.sol";
-contractMyTokenisERC20{
-constructor(uint256initialSupply)ERC20("MyToken","MTK"){
-_mint(msg.sender, initialSupply*10**decimals());
-}
+
+import "@openzeppelin/contracts@4.9.6/token/ERC20/ERC20.sol";
+
+contract MyToken is ERC20 {
+    constructor(uint256 initialSupply) ERC20("MyToken", "MTK") {
+        _mint(msg.sender, initialSupply * 10 ** decimals());
+    }
 }
 ```
 {% endstep %}

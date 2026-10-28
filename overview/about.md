@@ -49,7 +49,7 @@ LitVM is built around five core objectives:
 
 * Explore applications designed to bring Litecoin assets into yield markets
 * Use LTC represented as zkLTC within the intended V2 ecosystem
-* Engage with Litecoin-native assets (LTC, Ordinals, Runes, LTC-20s, Charms) in a programmable environment
+* Engage with LTC and Litecoin-native assets such as Ordinals, Runes, and LTC-20s in a programmable environment.
 
 ### For Developers
 
@@ -106,9 +106,9 @@ Connect to the LitVM testnet.
 {% endstep %}
 
 {% step %}
-### [Get zkLTC](https://testnet.litvm.com)
+### [Get Testnet zkLTC](https://testnet.litvm.com)
 
-Get zkLTC on LitVM.
+Get testnet zkLTC on LitVM.
 {% endstep %}
 
 {% step %}

@@ -1,6 +1,6 @@
 # add to wallet
 
-Connect your Web3 wallet to the LitVM network to start interacting with dApps, bridging assets, and deploying smart contracts.
+Connect your Web3 wallet to the LitVM network to start interacting with dApps, using testnet assets, and deploying smart contracts.
 
 ## Supported Wallets
 
