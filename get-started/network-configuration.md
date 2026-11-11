@@ -9,16 +9,22 @@ Use these published details to configure access to the LitVM LiteForge testnet. 
 | Network name | LitVM LiteForge |
 | Chain ID | 4441 |
 | Currency symbol | zkLTC |
-| RPC URL (HTTP) | https://liteforge.rpc.caldera.xyz/http |
-| RPC URL (WebSocket) | wss://liteforge.rpc.caldera.xyz/ws |
-| Block explorer | https://liteforge.explorer.caldera.xyz |
-| Explorer API | https://liteforge.explorer.caldera.xyz/api |
-| Faucet hub | https://liteforge.hub.caldera.xyz |
+| RPC URL (HTTP) | https://rpc.testnet.liteforge.zeeve.net/ |
+| RPC URL (WebSocket, legacy) | wss://liteforge.rpc.caldera.xyz/ws |
+| Block explorer | https://explorer.testnet.liteforge.zeeve.net |
+| Explorer API | https://explorer.testnet.liteforge.zeeve.net/api |
+| Faucet | https://faucet.testnet.liteforge.zeeve.net/ |
 | LitVM Testnet Hub | https://testnet.litvm.com |
 
-## Infrastructure migration
+## Infrastructure
 
-LitVM is moving its Rollup-as-a-Service infrastructure to Zeeve. The Caldera-hosted URLs above remain the published connection details while the migration is in progress. Replacement endpoints will be added after they are confirmed.
+**Zeeve** is LitVM’s Rollup-as-a-Service infrastructure provider, supporting chain deployment and network operations. LitVM’s LiteForge testnet infrastructure has migrated from Caldera to Zeeve.
+
+The HTTP RPC, explorer, explorer API, and faucet above use the Zeeve services also listed by the LitVM Testnet Hub. Use the HTTP RPC for new connections. The existing Caldera WebSocket URL remains available as a legacy connection until a replacement is confirmed.
+
+{% hint style="info" %}
+**Already connected to LiteForge?** If your wallet or application still uses the old Caldera HTTP RPC, update it to https://rpc.testnet.liteforge.zeeve.net/. The network name, Chain ID (**4441**), and gas currency (**zkLTC**) remain unchanged. Update saved explorer and faucet links to the Zeeve services listed above. A replacement WebSocket endpoint has not been published here; use the HTTP RPC.
+{% endhint %}
 
 Testnet zkLTC is used to exercise the network. Its availability does not establish that the V2 native LTC interoperability route is available.
 

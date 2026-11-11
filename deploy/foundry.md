@@ -97,11 +97,11 @@ libs = ["lib"]
 solc = "0.8.19"
 
 [rpc_endpoints]
-litvm_testnet = "https://liteforge.rpc.caldera.xyz/http"
+litvm_testnet = "https://rpc.testnet.liteforge.zeeve.net/"
 litvm_mainnet = "RPC_URL_MAINNET_TBD"
 
-[explorer]
-litvm_testnet = { key = "${LITVM_EXPLORER_API_KEY}", url = "https://liteforge.explorer.caldera.xyz/api"}
+[etherscan]
+litvm_testnet = { key = "${LITVM_EXPLORER_API_KEY}", chain = 4441, url = "https://explorer.testnet.liteforge.zeeve.net/api"}
 ```
 
 ***
@@ -113,7 +113,7 @@ Create a `.env` file (add to `.gitignore`!):
 ```bash
 # .env
 PRIVATE_KEY=your_private_key_here
-LITVM_RPC_URL=https://liteforge.rpc.caldera.xyz/http
+LITVM_RPC_URL=https://rpc.testnet.liteforge.zeeve.net/
 ```
 
 Load environment variables:
@@ -245,6 +245,8 @@ forge script script/Deploy.s.sol:DeployCounter \
 
 ## Verify Contract
 
+The examples below use the Zeeve Blockscout explorer and its API. Match the compiler version, optimizer settings, EVM target, and any constructor arguments to the deployment you are verifying. See [Network Configuration](../get-started/network-configuration.md) for connection details.
+
 Verify on LitVM Explorer:
 
 ```bash
@@ -254,8 +256,8 @@ forge verify-contract \
   --watch \
   [DEPLOYED_CONTRACT_ADDRESS] \
   src/Counter.sol:Counter \
-  --explorer-api-key $LITVM_EXPLORER_API_KEY \
-  --verifier-url https://liteforge.explorer.caldera.xyz
+  --verifier blockscout \
+  --verifier-url https://explorer.testnet.liteforge.zeeve.net/api/
 ```
 
 ***
@@ -366,4 +368,4 @@ cast nonce [YOUR_ADDRESS] --rpc-url $LITVM_RPC_URL
 
 * [Foundry Book](https://book.getfoundry.sh/)
 * [Foundry GitHub](https://github.com/foundry-rs/foundry)
-* [LitVM Block Explorer](https://liteforge.explorer.caldera.xyz)
+* [LitVM Block Explorer](https://explorer.testnet.liteforge.zeeve.net)

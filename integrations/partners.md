@@ -52,9 +52,9 @@ LitVM is helping fund and co-develop Litecoin and Ethereum support directly with
 
 ### Zeeve
 
-**Zeeve** is replacing Caldera as LitVM’s Rollup-as-a-Service infrastructure provider, supporting chain deployment and network operations.
+**Zeeve** is LitVM’s Rollup-as-a-Service infrastructure provider, supporting chain deployment and network operations. LitVM’s LiteForge testnet infrastructure has migrated from Caldera to Zeeve.
 
-The migration is in progress. Existing published Caldera-hosted RPC, WebSocket, explorer, and faucet endpoints remain in [Network Configuration](../get-started/network-configuration.md) until replacement endpoints are confirmed.
+The Zeeve HTTP RPC is listed in [Network Configuration](../get-started/network-configuration.md). The Zeeve explorer, explorer API, and faucet are listed there alongside the status of WebSocket access.
 
 **Learn More:** [zeeve.io](https://www.zeeve.io/)
 
@@ -121,7 +121,7 @@ See [Network Status](../resources/network-status.md) for network-specific availa
 | Ethereum | LitVM settlement |
 | Succinct | Proving technology |
 | Espresso | Sequencing |
-| Zeeve | RaaS infrastructure migration target |
+| Zeeve | Rollup-as-a-Service infrastructure and network operations |
 
 ***
 

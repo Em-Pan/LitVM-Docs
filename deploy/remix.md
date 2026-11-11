@@ -1,5 +1,9 @@
 # remix
 
+{% hint style="info" %}
+The HTTP RPC and explorer in this guide use Zeeve. See [Network Configuration](../get-started/network-configuration.md) for current endpoints. Use the same compiler settings and constructor arguments when verifying your deployed contract.
+{% endhint %}
+
 [Remix IDE](https://remix.ethereum.org/) is a browser-based development environment that requires no setup. It's perfect for quick prototyping, learning, and deploying simple contracts to LitVM.
 
 ## Prerequisites
@@ -110,7 +114,7 @@ Ensure LitVM Testnet is added to your wallet:
 | **Setting**     | **Value**                                        |
 | --------------- | ------------------------------------------------ |
 | Network Name    | LitVM LiteForge                                  |
-| RPC URL         | https://liteforge.rpc.caldera.xyz/http           |
+| RPC URL         | https://rpc.testnet.liteforge.zeeve.net/           |
 | Chain ID        | 4441                                             |
 | Currency Symbol | zkLTC                                            |
 {% endstep %}
@@ -208,7 +212,7 @@ Each write function triggers a MetaMask transaction popup.
 ## View on Block Explorer
 
 1. After deploying, copy the contract address from **Deployed Contracts**
-2. Visit [LitVM Explorer](https://liteforge.explorer.caldera.xyz)
+2. Visit [LitVM Explorer](https://explorer.testnet.liteforge.zeeve.net)
 3. Paste your contract address in the search bar
 4. View transactions, events, and contract code
 
