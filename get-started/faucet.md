@@ -6,8 +6,8 @@
 Get testnet zkLTC to start building on LitVM.
 {% endhint %}
 
-Get testnet zkLTC using the published faucet hub below. The existing destination remains in use in this documentation during the infrastructure migration to Zeeve.
+LiteForge’s testnet infrastructure has migrated to Zeeve. Use the Zeeve faucet below to request testnet zkLTC. See [Network Configuration](network-configuration.md) for current connection details.
 
 Testnet tokens are for network testing; the faucet is separate from native LTC interoperability. See [Network Status](../resources/network-status.md).
 
-**👉 [https://liteforge.hub.caldera.xyz](https://liteforge.hub.caldera.xyz)**
+**👉 [https://faucet.testnet.liteforge.zeeve.net/](https://faucet.testnet.liteforge.zeeve.net/)**

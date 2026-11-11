@@ -246,7 +246,7 @@ Yes. LitVM is EVM-compatible and supports standard Ethereum smart contracts, too
 
 <summary>Where can I find the RPC endpoints?</summary>
 
-See [Network Configuration](../get-started/network-configuration.md) for published testnet RPC, WebSocket, explorer, and faucet details. Existing Caldera-hosted endpoints remain documented during the migration to Zeeve. Mainnet connection details will be added when confirmed.
+Use https://rpc.testnet.liteforge.zeeve.net/ for the LiteForge HTTP RPC. LiteForge’s testnet infrastructure has migrated to Zeeve; the Chain ID remains 4441 and the gas currency is zkLTC. See [Network Configuration](../get-started/network-configuration.md) for all connection details. The explorer, explorer API, and faucet now use Zeeve. A replacement WebSocket endpoint has not been published here; use the HTTP RPC for new connections. Mainnet connection details will be added when confirmed.
 
 </details>
 

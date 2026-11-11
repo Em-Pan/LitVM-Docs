@@ -1,5 +1,9 @@
 # hardhat
 
+{% hint style="info" %}
+The HTTP RPC, explorer, and verification API in this guide use Zeeve. Match the compiler, optimizer settings, EVM target, and constructor arguments to your deployment when verifying. See [Network Configuration](../get-started/network-configuration.md) for current endpoints.
+{% endhint %}
+
 [Hardhat](https://hardhat.org/) is a popular Ethereum development environment that provides a flexible and extensible framework for building smart contracts. This guide shows you how to deploy to LitVM using Hardhat.
 
 ## Prerequisites
@@ -61,7 +65,7 @@ module.exports = {
   },
   networks: {
     litvm_testnet: {
-      url: "https://liteforge.rpc.caldera.xyz/http",
+      url: "https://rpc.testnet.liteforge.zeeve.net/",
       chainId: 4441,
       accounts: PRIVATE_KEY ? [PRIVATE_KEY] : [],
       gasPrice: "auto",
@@ -82,8 +86,8 @@ module.exports = {
         network: "litvm_testnet",
         chainId: 4441,
         urls: {
-          apiURL: "https://liteforge.explorer.caldera.xyz/api",
-          browserURL: "https://liteforge.explorer.caldera.xyz",
+          apiURL: "https://explorer.testnet.liteforge.zeeve.net/api",
+          browserURL: "https://explorer.testnet.liteforge.zeeve.net",
         },
       },
     ],
@@ -442,7 +446,7 @@ const config: HardhatUserConfig = {
   solidity: "0.8.19",
   networks: {
     litvm_testnet: {
-      url: "https://liteforge.rpc.caldera.xyz/http",
+      url: "https://rpc.testnet.liteforge.zeeve.net/",
       accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : [],
     },
   },

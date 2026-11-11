@@ -44,7 +44,7 @@ The easiest way to add LitVM is through our network configuration page:
 
 ## Manual Configuration
 
-The values below are also listed in [Network Configuration](network-configuration.md). Keep using the published endpoints until replacements are confirmed during the Zeeve migration.
+The values below are also listed in [Network Configuration](network-configuration.md). Use the Zeeve HTTP RPC for wallet connections. Use the Zeeve explorer shown below. The legacy WebSocket URL is retained for reference; use the HTTP RPC for new connections until a replacement WebSocket endpoint is confirmed. If you previously added LiteForge, update its HTTP RPC; the network name, Chain ID (4441), and gas currency (zkLTC) remain unchanged.
 
 If automatic methods don't work, add the network manually using these parameters:
 
@@ -53,11 +53,11 @@ If automatic methods don't work, add the network manually using these parameters
 | **Parameter**          | **Value**                                        |
 | ---------------------- | ------------------------------------------------ |
 | **Network Name**       | LitVM LiteForge                                  |
-| **RPC URL (HTTP)**     | https://liteforge.rpc.caldera.xyz/http           |
-| **RPC URL (WebSocket)**| wss://liteforge.rpc.caldera.xyz/ws               |
+| **RPC URL (HTTP)**     | https://rpc.testnet.liteforge.zeeve.net/           |
+| **RPC URL (WebSocket, legacy)**| wss://liteforge.rpc.caldera.xyz/ws               |
 | **Chain ID**           | 4441                                             |
 | **Currency Symbol**    | zkLTC                                            |
-| **Block Explorer URL** | https://liteforge.explorer.caldera.xyz           |
+| **Block Explorer URL** | https://explorer.testnet.liteforge.zeeve.net           |
 
 ✅ **Note**: Testnet is live! Connect your wallet and start building.
 
@@ -97,10 +97,10 @@ If automatic methods don't work, add the network manually using these parameters
 Enter the network details:
 
 * Network Name: LitVM LiteForge
-* New RPC URL: https://liteforge.rpc.caldera.xyz/http
+* New RPC URL: https://rpc.testnet.liteforge.zeeve.net/
 * Chain ID: 4441
 * Currency Symbol: zkLTC
-* Block Explorer URL: https://liteforge.explorer.caldera.xyz
+* Block Explorer URL: https://explorer.testnet.liteforge.zeeve.net
 {% endstep %}
 
 {% step %}

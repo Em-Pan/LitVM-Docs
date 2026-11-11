@@ -6,6 +6,6 @@
 Explore transactions, blocks, and accounts on LitVM Testnet.
 {% endhint %}
 
-Use the published testnet explorer below. Its existing Caldera-hosted URL is retained during the infrastructure migration to Zeeve. See [Network Configuration](network-configuration.md) for connection details.
+LiteForge’s testnet infrastructure has migrated to Zeeve. Use the Zeeve explorer below to inspect blocks, transactions, accounts, and verified contracts. See [Network Configuration](network-configuration.md) for the Zeeve HTTP RPC and other connection details.
 
-**👉 [https://liteforge.explorer.caldera.xyz](https://liteforge.explorer.caldera.xyz)**
+**👉 [https://explorer.testnet.liteforge.zeeve.net](https://explorer.testnet.liteforge.zeeve.net)**

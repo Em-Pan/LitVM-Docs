@@ -14,9 +14,11 @@ LitVM is co-developing Litecoin and Ethereum support with Charms. The V2 design 
 
 Availability of that complete route, supported assets, and issuance and redemption conditions will be described in release documentation. Use the release documentation for the relevant network when accessing the route.
 
-## Infrastructure migration
+## Infrastructure
 
-Zeeve is replacing Caldera as LitVM’s Rollup-as-a-Service provider. The migration is not yet complete. The existing Caldera-hosted RPC, WebSocket, explorer, and faucet URLs remain in the documentation until replacements are confirmed.
+**Zeeve** is LitVM’s Rollup-as-a-Service infrastructure provider, supporting chain deployment and network operations. LitVM’s LiteForge testnet infrastructure has migrated from Caldera to Zeeve.
+
+Use the Zeeve HTTP RPC in [Network Configuration](../get-started/network-configuration.md). The Zeeve explorer, explorer API, and faucet are also listed there. The legacy WebSocket URL remains for reference until a replacement is confirmed; use HTTP RPC for new connections.
 
 ## Proving and sequencing
 

@@ -18,7 +18,7 @@ LitVM connects Litecoin assets with EVM smart contracts. Its architecture combin
 
 The V2 asset route is **Litecoin → Charms / zkLTC → Ethereum → Arbitrum → LitVM**. Litecoin secures native LTC; Ethereum provides settlement for the LitVM chain. These are distinct roles.
 
-See [Architecture](overview/architecture.md) for the design and [Network Status](resources/network-status.md) for availability and migration notes.
+See [Architecture](overview/architecture.md) for the design and [Network Status](resources/network-status.md) for availability and infrastructure details.
 
 ## Quick Links
 

@@ -4,7 +4,7 @@ LitVM is an **EVM-compatible Arbitrum Orbit chain using Ethereum settlement**. I
 
 ## Architecture overview
 
-<figure><img src="../.gitbook/assets/v2-architecture.svg" alt="LitVM V2: Arbitrum Orbit and Nitro execution with Ethereum settlement. Charms connects native LTC to zkLTC on Ethereum; Arbitrum connects Ethereum to LitVM."><figcaption>Component roles in the V2 design. See Network Status for availability and infrastructure migration notes. Published connection details remain unchanged.</figcaption></figure>
+<figure><img src="../.gitbook/assets/v2-architecture.svg" alt="LitVM V2: Arbitrum Orbit and Nitro execution with Ethereum settlement. Charms connects native LTC to zkLTC on Ethereum; Arbitrum connects Ethereum to LitVM."><figcaption>Component roles in the V2 design. See Network Status for availability and Network Configuration for current connection details.</figcaption></figure>
 
 ## Execution and settlement
 
@@ -47,7 +47,9 @@ See [$LITVM & $zkLTC](usdlitvm-and-usdzkltc.md) for the distinction between the 
 
 ## Infrastructure
 
-**Zeeve** is replacing Caldera as LitVM’s Rollup-as-a-Service infrastructure provider. The migration is in progress. Existing published Caldera-hosted connection details remain in [Network Configuration](../get-started/network-configuration.md) until replacement endpoints are confirmed.
+**Zeeve** is LitVM’s Rollup-as-a-Service infrastructure provider, supporting chain deployment and network operations. LitVM’s LiteForge testnet infrastructure has migrated from Caldera to Zeeve.
+
+See [Network Configuration](../get-started/network-configuration.md) for the Zeeve HTTP RPC, explorer, explorer API, and faucet, plus the status of WebSocket access.
 
 ## Security model
 
@@ -64,5 +66,5 @@ Security of the complete route depends on the deployed integrations and their op
 ## Network reference
 
 * [Network Configuration](../get-started/network-configuration.md) — published RPC, WebSocket, explorer, and faucet details.
-* [Network Status](../resources/network-status.md) — availability and migration notes.
+* [Network Status](../resources/network-status.md) — availability and infrastructure details.
 * [Add to Your Wallet](../get-started/add-to-wallet.md) — wallet setup.
