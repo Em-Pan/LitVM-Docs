@@ -65,6 +65,6 @@ Security of the complete route depends on the deployed integrations and their op
 
 ## Network reference
 
-* [Network Configuration](../get-started/network-configuration.md) — published RPC, WebSocket, explorer, and faucet details.
+* [Network Configuration](../get-started/network-configuration.md) — published HTTP RPC, explorer, and faucet details.
 * [Network Status](../resources/network-status.md) — availability and infrastructure details.
 * [Add to Your Wallet](../get-started/add-to-wallet.md) — wallet setup.

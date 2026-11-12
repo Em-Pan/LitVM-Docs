@@ -18,7 +18,7 @@ Availability of that complete route, supported assets, and issuance and redempti
 
 **Zeeve** is LitVM’s Rollup-as-a-Service infrastructure provider, supporting chain deployment and network operations. LitVM’s LiteForge testnet infrastructure has migrated from Caldera to Zeeve.
 
-Use the Zeeve HTTP RPC in [Network Configuration](../get-started/network-configuration.md). The Zeeve explorer, explorer API, and faucet are also listed there. The legacy WebSocket URL remains for reference until a replacement is confirmed; use HTTP RPC for new connections.
+Use the Zeeve HTTP RPC in [Network Configuration](../get-started/network-configuration.md). The Zeeve explorer, explorer API, and faucet are also listed there. The Caldera WebSocket endpoint is no longer active. Use the HTTP RPC until an operational WebSocket replacement is confirmed.
 
 ## Proving and sequencing
 
