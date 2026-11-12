@@ -44,7 +44,7 @@ The easiest way to add LitVM is through our network configuration page:
 
 ## Manual Configuration
 
-The values below are also listed in [Network Configuration](network-configuration.md). Use the Zeeve HTTP RPC for wallet connections. Use the Zeeve explorer shown below. The legacy WebSocket URL is retained for reference; use the HTTP RPC for new connections until a replacement WebSocket endpoint is confirmed. If you previously added LiteForge, update its HTTP RPC; the network name, Chain ID (4441), and gas currency (zkLTC) remain unchanged.
+The values below are also listed in [Network Configuration](network-configuration.md). Use the Zeeve HTTP RPC for wallet connections. Use the Zeeve explorer shown below. Use the HTTP RPC for wallet connections; the Caldera WebSocket endpoint is no longer active. If you previously added LiteForge, update its HTTP RPC; the network name, Chain ID (4441), and gas currency (zkLTC) remain unchanged.
 
 If automatic methods don't work, add the network manually using these parameters:
 
@@ -54,7 +54,6 @@ If automatic methods don't work, add the network manually using these parameters
 | ---------------------- | ------------------------------------------------ |
 | **Network Name**       | LitVM LiteForge                                  |
 | **RPC URL (HTTP)**     | https://rpc.testnet.liteforge.zeeve.net/           |
-| **RPC URL (WebSocket, legacy)**| wss://liteforge.rpc.caldera.xyz/ws               |
 | **Chain ID**           | 4441                                             |
 | **Currency Symbol**    | zkLTC                                            |
 | **Block Explorer URL** | https://explorer.testnet.liteforge.zeeve.net           |

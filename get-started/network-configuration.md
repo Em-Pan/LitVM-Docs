@@ -10,7 +10,6 @@ Use these published details to configure access to the LitVM LiteForge testnet. 
 | Chain ID | 4441 |
 | Currency symbol | zkLTC |
 | RPC URL (HTTP) | https://rpc.testnet.liteforge.zeeve.net/ |
-| RPC URL (WebSocket, legacy) | wss://liteforge.rpc.caldera.xyz/ws |
 | Block explorer | https://explorer.testnet.liteforge.zeeve.net |
 | Explorer API | https://explorer.testnet.liteforge.zeeve.net/api |
 | Faucet | https://faucet.testnet.liteforge.zeeve.net/ |
@@ -20,7 +19,7 @@ Use these published details to configure access to the LitVM LiteForge testnet. 
 
 **Zeeve** is LitVM’s Rollup-as-a-Service infrastructure provider, supporting chain deployment and network operations. LitVM’s LiteForge testnet infrastructure has migrated from Caldera to Zeeve.
 
-The HTTP RPC, explorer, explorer API, and faucet above use the Zeeve services also listed by the LitVM Testnet Hub. Use the HTTP RPC for new connections. The existing Caldera WebSocket URL remains available as a legacy connection until a replacement is confirmed.
+The HTTP RPC, explorer, explorer API, and faucet above use the Zeeve services also listed by the LitVM Testnet Hub. Use the HTTP RPC for new connections. The Caldera WebSocket endpoint is no longer active. Use the HTTP RPC; a replacement WebSocket endpoint will be listed only after it is confirmed operational.
 
 {% hint style="info" %}
 **Already connected to LiteForge?** If your wallet or application still uses the old Caldera HTTP RPC, update it to https://rpc.testnet.liteforge.zeeve.net/. The network name, Chain ID (**4441**), and gas currency (**zkLTC**) remain unchanged. Update saved explorer and faucet links to the Zeeve services listed above. A replacement WebSocket endpoint has not been published here; use the HTTP RPC.
