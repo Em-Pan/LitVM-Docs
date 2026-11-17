@@ -15,7 +15,7 @@ DIA is a cross-chain, trustless oracle network delivering verifiable price feeds
 
 | Chain         | Contract Address |
 | ------------- | --------------- |
-| LitVM Testnet | [0xE7F65d4bAdcfABc4eA57B8F66bBa044363D89eec](https://liteforge.explorer.caldera.xyz/address/0xE7F65d4bAdcfABc4eA57B8F66bBa044363D89eec) |
+| LitVM Testnet | [0xE7F65d4bAdcfABc4eA57B8F66bBa044363D89eec](https://explorer.testnet.liteforge.zeeve.net/address/0xE7F65d4bAdcfABc4eA57B8F66bBa044363D89eec) |
 
 ### Oracle Configuration
 
@@ -28,15 +28,15 @@ DIA is a cross-chain, trustless oracle network delivering verifiable price feeds
 
 | Chain         | Price Feed | Type   | Adapter Address (AggregatorV3Interface) |
 | :------------ | :--------- | :----- | :-------------------------------------- |
-| LitVM Testnet | USDC       | Market | [0x4f91a950ed73c8B6F28dFE460f9444ed8866894f](https://liteforge.explorer.caldera.xyz/address/0x4f91a950ed73c8B6F28dFE460f9444ed8866894f) |
-| LitVM Testnet | USDT       | Market | [0xd7ff0A3DdE1FdC2137Ff4CaAde5396f009739645](https://liteforge.explorer.caldera.xyz/address/0xd7ff0A3DdE1FdC2137Ff4CaAde5396f009739645) |
-| LitVM Testnet | ETH        | Market | [0xc760B46beF9eD3F9A3d2b825164324D6703F0185](https://liteforge.explorer.caldera.xyz/address/0xc760B46beF9eD3F9A3d2b825164324D6703F0185) |
-| LitVM Testnet | BTC        | Market | [0x7d0445782E383223c7B4B660bb96b87213e9b605](https://liteforge.explorer.caldera.xyz/address/0x7d0445782E383223c7B4B660bb96b87213e9b605) |
-| LitVM Testnet | LTC/USD    | Market | [0x45dDa5d881BD2C917976CCfde74fFd6f6412da29](https://liteforge.explorer.caldera.xyz/address/0x45dDa5d881BD2C917976CCfde74fFd6f6412da29) |
-| LitVM Testnet | XAU/USD    | Market | [0x519A391D8999F0A18E1E9A5649FEA3D942A1bDdF](https://liteforge.explorer.caldera.xyz/address/0x519A391D8999F0A18E1E9A5649FEA3D942A1bDdF) |
-| LitVM Testnet | XAG/USD    | Market | [0xfb49F5C1eFF83Cc392357Cb979a9432C90eE0eb7](https://liteforge.explorer.caldera.xyz/address/0xfb49F5C1eFF83Cc392357Cb979a9432C90eE0eb7) |
-| LitVM Testnet | WTI/USD    | Market | [0x9cee709Fc9Da87d958a468859b8C02d591b7245A](https://liteforge.explorer.caldera.xyz/address/0x9cee709Fc9Da87d958a468859b8C02d591b7245A) |
-| LitVM Testnet | XBR/USD    | Market | [0x41bb23dD937C5733BF8c0826b9d99d89790c0cAF](https://liteforge.explorer.caldera.xyz/address/0x41bb23dD937C5733BF8c0826b9d99d89790c0cAF) |
+| LitVM Testnet | USDC       | Market | [0x4f91a950ed73c8B6F28dFE460f9444ed8866894f](https://explorer.testnet.liteforge.zeeve.net/address/0x4f91a950ed73c8B6F28dFE460f9444ed8866894f) |
+| LitVM Testnet | USDT       | Market | [0xd7ff0A3DdE1FdC2137Ff4CaAde5396f009739645](https://explorer.testnet.liteforge.zeeve.net/address/0xd7ff0A3DdE1FdC2137Ff4CaAde5396f009739645) |
+| LitVM Testnet | ETH        | Market | [0xc760B46beF9eD3F9A3d2b825164324D6703F0185](https://explorer.testnet.liteforge.zeeve.net/address/0xc760B46beF9eD3F9A3d2b825164324D6703F0185) |
+| LitVM Testnet | BTC        | Market | [0x7d0445782E383223c7B4B660bb96b87213e9b605](https://explorer.testnet.liteforge.zeeve.net/address/0x7d0445782E383223c7B4B660bb96b87213e9b605) |
+| LitVM Testnet | LTC/USD    | Market | [0x45dDa5d881BD2C917976CCfde74fFd6f6412da29](https://explorer.testnet.liteforge.zeeve.net/address/0x45dDa5d881BD2C917976CCfde74fFd6f6412da29) |
+| LitVM Testnet | XAU/USD    | Market | [0x519A391D8999F0A18E1E9A5649FEA3D942A1bDdF](https://explorer.testnet.liteforge.zeeve.net/address/0x519A391D8999F0A18E1E9A5649FEA3D942A1bDdF) |
+| LitVM Testnet | XAG/USD    | Market | [0xfb49F5C1eFF83Cc392357Cb979a9432C90eE0eb7](https://explorer.testnet.liteforge.zeeve.net/address/0xfb49F5C1eFF83Cc392357Cb979a9432C90eE0eb7) |
+| LitVM Testnet | WTI/USD    | Market | [0x9cee709Fc9Da87d958a468859b8C02d591b7245A](https://explorer.testnet.liteforge.zeeve.net/address/0x9cee709Fc9Da87d958a468859b8C02d591b7245A) |
+| LitVM Testnet | XBR/USD    | Market | [0x41bb23dD937C5733BF8c0826b9d99d89790c0cAF](https://explorer.testnet.liteforge.zeeve.net/address/0x41bb23dD937C5733BF8c0826b9d99d89790c0cAF) |
 
 ## How to Access Data
 
